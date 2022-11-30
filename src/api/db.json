@@ -1,0 +1,64 @@
+{
+  "applicant": [
+    {
+      "id": 1,
+      "firstName": "Selen",
+      "lastName": "Özbay",
+      "email": "selen@gmail.com",
+      "password": "12345",
+      "nationalIdentity": 12345678912,
+      "dateOfBirth": "10/11/1997",
+      "about": "uzun kız"
+    }
+  ],
+  "instructor ": [
+    {
+      "id": 1,
+      "firstName": "Engin",
+      "lastName": "Demiroğ",
+      "email": "engin@gmail.com",
+      "password": "12345",
+      "companyName": "Kodlama.io",
+      "nationalIdentity": 12345678914,
+      "dateOfBirth": "01/01/1980"
+    }
+  ],
+  "employee": [
+    {
+      "id": 1,
+      "firstName": "Esra",
+      "lastName": "Yılmaz",
+      "email": "esra@gmail.com",
+      "password": "12345",
+      "nationalIdentity": 12345678919,
+      "dateOfBirth": "01/01/1990",
+      "position": "memur"
+    }
+  ],
+  "bootcamp": [
+    {
+      "id": 1,
+      "instructorId": 1,
+      "name": "Frontend",
+      "dateStart": "14/11/2022",
+      "dateEnd": "12/12/2022",
+      "state": 1
+    }
+  ],
+  "blacklist": [
+    {
+      "id": 1,
+      "applicantId": 1,
+      "date": "30/11/2022",
+      "reason": "bencil adam"
+    }
+  ],
+  "application": [
+    {
+      "userId": 1,
+      "applicantId": 1,
+      "bootcampId": 1,
+      "state": 1
+    }
+  ]
+}
