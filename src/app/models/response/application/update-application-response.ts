@@ -1,5 +1,6 @@
 export interface IUpdateApplicationResponseModel{
-    userId:number
+    id:number
+    applicantId:number
     bootcampId:number
     state:number
 }

@@ -1,3 +1,5 @@
+import { ApplicantService } from './../../../services/applicant/applicant.service';
+import { IGetAllApplicantResponseModel } from './../../../models/response/applicant/getAllApplicant-response';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GetAllApplicantComponent implements OnInit {
 
-  constructor() { }
+  applicants:IGetAllApplicantResponseModel[]=[];
+  constructor(private applicantService:ApplicantService) { }
 
   ngOnInit(): void {
+    this.getAllApplicant();
+  }
+
+  getAllApplicant(){
+    this.applicantService.getAllApplicant().subscribe(data=>this.applicants=data)
   }
 
 }

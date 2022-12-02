@@ -1,1 +1,39 @@
-<p>update-application works!</p>
+<form  [formGroup]="applicationUpdateForm" *ngIf="applicationUpdateForm">
+
+    <div  class="btn btn-button" style="float:right ;">
+     <button (click)="updateApplication()" type="button" class="btn btn-success" style="margin-right: 10px;">GÜNCELLE</button>
+   </div>
+   
+    <ul class="list-group">
+     <div class="list-group">
+       <h5 class="title" style="text-align: center; color:firebrick;">BAŞVURU GÜNCELLE</h5>
+     </div>
+  
+     <div class="mb-3">
+       <label for="applicantId"><b>Aday Id</b></label>
+       <div class="form-group">
+         <input type="number" formControlName="applicantId" class="form-control"/>
+       </div>
+     </div>
+  
+     <div class="mb-3">
+       <label for="bootcampId"><b>Bootcamp Id</b></label>
+       <div class="form-group">
+         <input type="number" formControlName="bootcampId" class="form-control"/>
+       </div>
+     </div>
+  
+    
+     <div class="mb-3">
+       <label for="state"><b>State</b></label>
+       <div class="form-group">
+         <input type="number" formControlName="state" class="form-control"/>
+       </div>
+     </div>
+         
+   </ul>
+   
+  </form>
+  
+
+

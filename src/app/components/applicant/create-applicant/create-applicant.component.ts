@@ -1,3 +1,6 @@
+import { ApplicantService } from './../../../services/applicant/applicant.service';
+import { ICreateApplicantRequestModel } from './../../../models/request/applicant/create-applicant-request';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +10,39 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreateApplicantComponent implements OnInit {
 
-  constructor() { }
+  createApplicantForm:FormGroup;
+  createApplicantModel:ICreateApplicantRequestModel[]=[];
+  constructor(private applicantService:ApplicantService,
+    private formBuilder:FormBuilder) { }
 
   ngOnInit(): void {
+    this.createCreateApplicantForm();
   }
+
+  createCreateApplicantForm() {
+    this.createApplicantForm = this.formBuilder.group({
+      
+      firstName: ['', Validators.required ],
+      lastName: ['',Validators.required],
+      email: ['',Validators.required],
+      password:['',Validators.required],
+      nationalIdentity:['',Validators.required],
+      dateOfBirth:['',Validators.required],
+      about:['',Validators.required],
+    });
+  }
+
+  addApplicant(){
+    if(this.createApplicantForm.valid){
+      let applicant=Object.assign({},this.createApplicantForm.value)
+      this.applicantService.addApplicant(applicant).subscribe(data=>{
+        console.log(data)
+      })
+    }
+
+  }
+
+
+ 
 
 }

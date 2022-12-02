@@ -1,1 +1,19 @@
-<p>get-all-applicant works!</p>
+<div class="container" style="display:flex;flex-direction:row;flex-wrap:wrap">
+    <div class="mb-3" *ngFor="let applicant of applicants ">
+      <div class="card" style="width:18rem;margin-left:10px;">
+        <div class="card-body">
+         
+          <p class="card-text">{{applicant.firstName}}</p>
+          <p class="card-text">{{applicant.lastName}}</p>
+          <p class="card-text">{{applicant.email}}</p>
+          <p class="card-text">{{applicant.password}}</p>
+          <p class="card-text">{{applicant.nationalIdentity}}</p>
+          <p class="card-text">{{applicant.dateOfBirth}}</p>
+          <p class="card-text">{{applicant.about}}</p>
+         
+      </div>
+    </div>
+  </div>
+</div>
+
+  
