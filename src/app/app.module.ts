@@ -29,6 +29,9 @@ import { GetBootcampComponent } from './components/bootcamp/get-bootcamp/get-boo
 import { GetAllBootcampComponent } from './components/bootcamp/get-all-bootcamp/get-all-bootcamp.component';
 import { GetEmployeeComponent } from './components/employee/get-employee/get-employee.component';
 import { GetAllEmployeeComponent } from './components/employee/get-all-employee/get-all-employee.component';
+import { HomepageComponent } from './components/homepage/homepage.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
 
 @NgModule({
   declarations: [
@@ -57,6 +60,9 @@ import { GetAllEmployeeComponent } from './components/employee/get-all-employee/
     GetAllBootcampComponent,
     GetEmployeeComponent,
     GetAllEmployeeComponent,
+    HomepageComponent,
+    LoginComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
