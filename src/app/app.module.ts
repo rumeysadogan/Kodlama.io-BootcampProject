@@ -32,6 +32,11 @@ import { GetAllEmployeeComponent } from './components/employee/get-all-employee/
 import { HomepageComponent } from './components/homepage/homepage.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
+import { NaviComponent } from './components/layouts/navi/navi.component';
+import { FooterComponent } from './components/layouts/footer/footer.component';
+import { PanelComponent } from './components/layouts/panel/panel.component';
+import { SidebarComponent } from './components/layouts/sidebar/sidebar.component';
+import { SidebarRightComponent } from './components/layouts/sidebar-right/sidebar-right.component';
 
 @NgModule({
   declarations: [
@@ -63,6 +68,11 @@ import { RegisterComponent } from './components/register/register.component';
     HomepageComponent,
     LoginComponent,
     RegisterComponent,
+    NaviComponent,
+    FooterComponent,
+    PanelComponent,
+    SidebarComponent,
+    SidebarRightComponent,
   ],
   imports: [
     BrowserModule,
