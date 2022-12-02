@@ -19,6 +19,16 @@ import { CreateInstructorComponent } from './components/instructor/create-instru
 import { UpdateInstructorComponent } from './components/instructor/update-instructor/update-instructor.component';
 import { GetInstructorComponent } from './components/instructor/get-instructor/get-instructor.component';
 import { GetAllInstructorComponent } from './components/instructor/get-all-instructor/get-all-instructor.component';
+import { GetApplicantComponent } from './components/applicant/get-applicant/get-applicant.component';
+import { GetAllApplicantComponent } from './components/applicant/get-all-applicant/get-all-applicant.component';
+import { GetApplicationComponent } from './components/application/get-application/get-application.component';
+import { GetAllApplicationComponent } from './components/application/get-all-application/get-all-application.component';
+import { GetBlacklistComponent } from './components/blacklist/get-blacklist/get-blacklist.component';
+import { GetAllBlacklistComponent } from './components/blacklist/get-all-blacklist/get-all-blacklist.component';
+import { GetBootcampComponent } from './components/bootcamp/get-bootcamp/get-bootcamp.component';
+import { GetAllBootcampComponent } from './components/bootcamp/get-all-bootcamp/get-all-bootcamp.component';
+import { GetEmployeeComponent } from './components/employee/get-employee/get-employee.component';
+import { GetAllEmployeeComponent } from './components/employee/get-all-employee/get-all-employee.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +47,16 @@ import { GetAllInstructorComponent } from './components/instructor/get-all-instr
     UpdateInstructorComponent,
     GetInstructorComponent,
     GetAllInstructorComponent,
+    GetApplicantComponent,
+    GetAllApplicantComponent,
+    GetApplicationComponent,
+    GetAllApplicationComponent,
+    GetBlacklistComponent,
+    GetAllBlacklistComponent,
+    GetBootcampComponent,
+    GetAllBootcampComponent,
+    GetEmployeeComponent,
+    GetAllEmployeeComponent,
   ],
   imports: [
     BrowserModule,
