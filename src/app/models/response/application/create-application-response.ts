@@ -1,5 +1,6 @@
 export interface ICreateApplicationResponseModel{
-    userId:number
+    id:number
+    applicantId:number
     bootcampId:number
     state:number
 }
