@@ -1,0 +1,23 @@
+<h4>Instructors</h4>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">e-mail</th>
+      <th scope="col">Nationaldentity</th>
+      <th scope="col">Date of Birth</th>
+      <th scope="col">Company Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let instructor of instructors">
+      <td>{{ instructor.firstName }}</td>
+      <td>{{ instructor.lastName }}</td>
+      <td>{{ instructor.email }}</td>
+      <td>{{ instructor.nationalIdentity }}</td>
+      <td>{{ instructor.dateOfBirth }}</td>
+      <td>{{ instructor.companyName }}</td>
+    </tr>
+  </tbody>
+</table>

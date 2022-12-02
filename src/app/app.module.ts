@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,6 +17,8 @@ import { CreateEmployeeComponent } from './components/employee/create-employee/c
 import { UpdateEmployeeComponent } from './components/employee/update-employee/update-employee.component';
 import { CreateInstructorComponent } from './components/instructor/create-instructor/create-instructor.component';
 import { UpdateInstructorComponent } from './components/instructor/update-instructor/update-instructor.component';
+import { GetInstructorComponent } from './components/instructor/get-instructor/get-instructor.component';
+import { GetAllInstructorComponent } from './components/instructor/get-all-instructor/get-all-instructor.component';
 
 @NgModule({
   declarations: [
@@ -30,13 +34,18 @@ import { UpdateInstructorComponent } from './components/instructor/update-instru
     CreateEmployeeComponent,
     UpdateEmployeeComponent,
     CreateInstructorComponent,
-    UpdateInstructorComponent
+    UpdateInstructorComponent,
+    GetInstructorComponent,
+    GetAllInstructorComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
