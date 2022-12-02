@@ -80,10 +80,17 @@
       "bootcampId": 1,
       "state": 1
     },
-    { 
-      "id": 2, 
-      "applicantId": 2, 
-      "bootcampId": 1, 
-      "state": 1 }
+    {
+      "id": 2,
+      "applicantId": 2,
+      "bootcampId": 1,
+      "state": 1
+    },
+    {
+      "applicantId": 3,
+      "bootcampId": 1,
+      "state": 1,
+      "id": 3
+    }
   ]
 }
