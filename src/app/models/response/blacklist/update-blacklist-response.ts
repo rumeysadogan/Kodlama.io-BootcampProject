@@ -1,6 +1,6 @@
-export interface IUpdateBlackListResponseModel{
-    "id": number;
-    "applicantId": number;
-    "date": string;
-    "reason": string;
+export interface IUpdateBlackListResponseModel {
+  id: number;
+  applicantId: number;
+  date: string;
+  reason: string;
 }
