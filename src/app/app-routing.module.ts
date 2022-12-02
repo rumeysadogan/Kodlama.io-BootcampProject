@@ -1,3 +1,4 @@
+import { GetAllBlacklistComponent } from './components/blacklist/get-all-blacklist/get-all-blacklist.component';
 import { GetAllEmployeeComponent } from './components/employee/get-all-employee/get-all-employee.component';
 import { GetEmployeeComponent } from './components/employee/get-employee/get-employee.component';
 import { GetAllBootcampComponent } from './components/bootcamp/get-all-bootcamp/get-all-bootcamp.component';
@@ -43,7 +44,7 @@ const routes: Routes = [
   //blacklist
   { path: 'create-blacklist', component: CreateBlacklistComponent },
   { path: 'blacklist/:id', component: GetBlacklistComponent },
-  { path: 'blacklists', component: GetBlacklistComponent },
+  { path: 'blacklists', component: GetAllBlacklistComponent },
   { path: 'update-blacklist/:id', component: UpdateBlacklistComponent },
   //Bootcamp
   { path: 'create-bootcamp', component: CreateBootcampComponent },
