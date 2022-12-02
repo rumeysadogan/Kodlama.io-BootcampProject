@@ -75,7 +75,7 @@
   ],
   "application": [
     {
-      "userId": 1,
+      "id": 1,
       "applicantId": 1,
       "bootcampId": 1,
       "state": 1
