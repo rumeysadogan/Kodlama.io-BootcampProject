@@ -75,10 +75,15 @@
   ],
   "application": [
     {
-      "userId": 1,
+      "id": 1,
       "applicantId": 1,
       "bootcampId": 1,
       "state": 1
-    }
+    },
+    { 
+      "id": 2, 
+      "applicantId": 2, 
+      "bootcampId": 1, 
+      "state": 1 }
   ]
 }
