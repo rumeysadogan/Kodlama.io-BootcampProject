@@ -1,3 +1,6 @@
+import { ActivatedRoute } from '@angular/router';
+import { BootcampService } from './../../../services/bootcamp/bootcamp.service';
+import { IGetAllBootcampResponseModel } from './../../../models/response/bootcamp/getAllBootcamp-response';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +9,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./get-bootcamp.component.css']
 })
 export class GetBootcampComponent implements OnInit {
-
-  constructor() { }
+  bootcamps:IGetAllBootcampResponseModel;
+  constructor(private bootcampService:BootcampService,
+    private activatedRoute:ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.activatedRoute.params.subscribe(params=>this.getBootcamp(params["id"]));
+  }
+  
+  getBootcamp(id: number) {
+    this.bootcampService
+      .getBootcampById(id)
+      .subscribe((data) => (this.bootcamps= data));
   }
 
 }

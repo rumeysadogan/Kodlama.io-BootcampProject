@@ -63,6 +63,14 @@
       "dateStart": "14/11/2022",
       "dateEnd": "12/12/2022",
       "state": 1
+    },
+    {
+      "instructorId": 2,
+      "name": "Fatih Kadir Akın",
+      "dateStart": "21.12.2022",
+      "dateEnd": "30.12.2022",
+      "state": "1",
+      "id": 2
     }
   ],
   "blacklist": [
@@ -80,10 +88,11 @@
       "bootcampId": 1,
       "state": 1
     },
-    { 
-      "id": 2, 
-      "applicantId": 2, 
-      "bootcampId": 1, 
-      "state": 1 }
+    {
+      "id": 2,
+      "applicantId": 2,
+      "bootcampId": 1,
+      "state": 1
+    }
   ]
 }

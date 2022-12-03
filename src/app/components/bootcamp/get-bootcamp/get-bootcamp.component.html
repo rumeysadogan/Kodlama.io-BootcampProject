@@ -1,1 +1,43 @@
-<p>get-bootcamp works!</p>
+<h3>Adaylar Detay</h3>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Eğitmen Kimliği</th>
+      <th scope="col">İsim</th>
+      <th scope="col">Başlangıç Tarihi</th>
+      <th scope="col">Bitiş Tarihi</th>
+      <th scope="col">Durumu</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>{{ bootcamps.id }}</td>
+      <td>{{ bootcamps.instructorId }}</td>
+      <td>{{ bootcamps.name }}</td>
+      <td>{{ bootcamps.dateStart }}</td>
+      <td>{{ bootcamps.dateEnd }}</td>
+      <td>{{ bootcamps.state }}</td>
+
+      <td>
+        <button
+          type="button"
+          class="btn btn-primary"
+          routerLink="/bootcamps"
+        >
+          Dön
+        </button>
+      </td>
+      <td>
+        <button
+          type="button"
+          class="btn btn-warning"
+          routerLink="/update-bootcamp/{{ bootcamps.id }}"
+        >
+          Düzenle
+        </button>
+      </td>
+      <td><button type="button" class="btn btn-danger">Sil</button></td>
+    </tr>
+  </tbody>
+</table>
