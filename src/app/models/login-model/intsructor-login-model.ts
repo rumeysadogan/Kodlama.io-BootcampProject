@@ -1,4 +1,4 @@
-export interface IEmployeeLoginModel{
+export interface IInstructorLoginModel{
     email:string
     password:string
     token:string

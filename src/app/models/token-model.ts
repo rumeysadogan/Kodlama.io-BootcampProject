@@ -1,1 +1,4 @@
-export interface ITokenModel {}
+export interface ITokenModel {
+    token:string;
+    expiration:string;
+}
