@@ -1,3 +1,6 @@
+import { IGetAllEmployeeResponseModel } from './../../../models/response/employee/getAllEmployee-response';
+import { ActivatedRoute } from '@angular/router';
+import { EmployeeService } from './../../../services/employee/employee.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +9,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./get-all-employee.component.css']
 })
 export class GetAllEmployeeComponent implements OnInit {
-
-  constructor() { }
+  employees:IGetAllEmployeeResponseModel[]=[];
+  constructor(
+    private employeeService:EmployeeService,
+    private activatedRoute:ActivatedRoute
+  ) { }
 
   ngOnInit(): void {
+    this.activatedRoute.params.subscribe((params) => this.getAllEmployee());
+  }
+
+  getAllEmployee(){
+    this.employeeService
+    .getAllEmployee()
+    .subscribe((data) => (this.employees = data));
   }
 
 }

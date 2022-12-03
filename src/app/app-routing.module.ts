@@ -1,3 +1,4 @@
+import { LoginComponent } from './components/login/login.component';
 import { GetAllBlacklistComponent } from './components/blacklist/get-all-blacklist/get-all-blacklist.component';
 import { GetAllEmployeeComponent } from './components/employee/get-all-employee/get-all-employee.component';
 import { GetEmployeeComponent } from './components/employee/get-employee/get-employee.component';
@@ -56,6 +57,8 @@ const routes: Routes = [
   { path: 'employee/:id', component: GetEmployeeComponent },
   { path: 'employees', component: GetAllEmployeeComponent },
   { path: 'update-employee/:id', component: UpdateEmployeeComponent },
+
+  { path:'employeelogin',component:LoginComponent }
 ];
 
 @NgModule({
