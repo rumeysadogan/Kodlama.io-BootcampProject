@@ -20,38 +20,34 @@ export class UpdateBootcampComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-  this.getByIdBootcamp();
-  }
-
-  getBootcampDetail(id:number) {
-    this.bootcampService
-      .getBootcamp(id)
-      .subscribe((data) => (this.bootcamp = data));
-      this.createBootcampUpdateForm();
-  }
-
-  getByIdBootcamp() {
     this.activatedRoute.params.subscribe((params) => {
-      this.getBootcampDetail(params['id']);
+      this.loadBootcampDetail(params['id']);
     });
   }
 
-  createBootcampUpdateForm(){
-    this.bootcampUpdateForm=this.formBuilder.group({
-      instructorId:[this.bootcamp.instructorId, Validators.required],
-      name: [this.bootcamp.name,Validators.required],
-      dateStart:[this.bootcamp.dateStart,Validators.required],
-      dateEnd: [this.bootcamp.dateEnd,Validators.required],
-      state:[this.bootcamp.state,Validators.required]
-    })
+  loadBootcampDetail(id) {
+    this.bootcampService.getBootcamp(id).subscribe((data) => {
+      this.bootcamp = data;
+      this.createBootcampUpdateForm();
+    });
+  }
+
+  createBootcampUpdateForm() {
+    this.bootcampUpdateForm = this.formBuilder.group({
+      instructorId: [this.bootcamp.instructorId, Validators.required],
+      name: [this.bootcamp.name, Validators.required],
+      dateStart: [this.bootcamp.dateStart, Validators.required],
+      dateEnd: [this.bootcamp.dateEnd, Validators.required],
+      state: [this.bootcamp.state, Validators.required],
+    });
   }
 
   update(): void {
-    this.bootcampService.updateBootcamp(
+    this.bootcampService
+      .updateBootcamp(
         this.activatedRoute.snapshot.params['id'],
         this.bootcampUpdateForm.value
       )
       .subscribe((response) => console.log('update'));
   }
-
 }

@@ -93,15 +93,6 @@
       "applicantId": 2,
       "bootcampId": 1,
       "state": 1
-<<<<<<< HEAD
-=======
-    },
-    {
-      "applicantId": 3,
-      "bootcampId": 1,
-      "state": 1,
-      "id": 3
->>>>>>> 2242ac1465ec9fc21955600e548c2440bff4ecbe
     }
   ]
 }
