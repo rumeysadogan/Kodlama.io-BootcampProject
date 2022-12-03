@@ -1,1 +1,17 @@
-<p>get-all-blacklist works!</p>
+<h4>Blacklist</h4>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Applicant Id</th>
+      <th scope="col">Date</th>
+      <th scope="col">Reason</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let data of blacklist">
+      <td>{{ data.applicantId }}</td>
+      <td>{{ data.date }}</td>
+      <td>{{ data.reason }}</td>
+    </tr>
+  </tbody>
+</table>
