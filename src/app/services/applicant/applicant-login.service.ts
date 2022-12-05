@@ -11,7 +11,7 @@ export class ApplicantLoginService {
   apiurl: string = 'http://localhost:3000/applicant';
   constructor(private httpClient:HttpClient) { }
 
-  employeeLogin(user:IApplicantLoginModel){
+  applicantLogin(user:IApplicantLoginModel){
     return this.httpClient.get<ITokenModel[]>(this.apiurl+'?email=' +user.email +'&password=' +user.password)
 
   }
