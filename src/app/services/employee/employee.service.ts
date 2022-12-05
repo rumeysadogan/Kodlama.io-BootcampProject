@@ -26,5 +26,8 @@ export class EmployeeService {
   updateEmployee(id: number, employee: IUpdateEmployeeRequestModel) {
     return this.httpClient.put(this.apiUrl + '/' + id, employee);
   }
+  deleteEmployee(employee: IGetAllEmployeeResponseModel) {
+    return this.httpClient.delete(this.apiUrl + '/' + employee.id);
+  }
 }
 

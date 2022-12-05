@@ -1,3 +1,5 @@
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 import { IGetAllEmployeeResponseModel } from './../../../models/response/employee/getAllEmployee-response';
 import { ActivatedRoute } from '@angular/router';
 import { EmployeeService } from './../../../services/employee/employee.service';
@@ -24,5 +26,8 @@ export class GetAllEmployeeComponent implements OnInit {
     .getAllEmployee()
     .subscribe((data) => (this.employees = data));
   }
-
+  deleteEmployee(employee){
+    this.employees = this.employees.filter((a) => a !== employee);
+    this.employeeService.deleteEmployee(employee).subscribe();
+  }
 }
