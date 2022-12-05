@@ -21,12 +21,21 @@
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
               "src/styles.css",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "./src/assets/css/corporate-ui-dashboard.css",
+
+              "./src/assets/css/corporate-ui-dashboard.min.css",
+              "./src/assets/css/nucleo-icons.css",
+              "./src/assets/css/nucleo-svg.css"         
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
               "./node_modules/@popperjs/core/dist/umd/popper.min.js",
-              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "./src/assets/js/corporate-ui-dashboard.js",
+              "./src/assets/js/corporate-ui-dashboard.min.js",
+              "./src/assets/js/core/bootstrap.bundle.min.js"
+              
             ]
           },
           "configurations": {
