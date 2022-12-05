@@ -5,5 +5,7 @@ export interface IUpdateBootcampRequestModel {
   dateStart: string;
   dateEnd: string;
   state: number;
+  image:string;
+  
   }
   

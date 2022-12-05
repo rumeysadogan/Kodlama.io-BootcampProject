@@ -72,15 +72,28 @@
       "name": "Frontend",
       "dateStart": "14/11/2022",
       "dateEnd": "12/12/2022",
-      "state": 1
+      "state": 1,
+      "image": "https://birparcatuhaftik.com/wp-content/uploads/2020/08/front-end-developer.jpg"
     },
     {
       "instructorId": 2,
-      "name": "BackEnd",
-      "dateStart": "21.12.2022",
-      "dateEnd": "30.12.2022",
+      "name": "Backend",
+      "dateStart": "21/12/2022",
+      "dateEnd": "30/12/2022",
       "state": "1",
-      "id": 2
+      "id": 2,
+      "image": "https://play-lh.googleusercontent.com/mHEywwrourM3N9Z94du0IqO7tVu0cm78E0NeYdUFUwDAvfPLtFt0jXMGbh8mIcapDio"
+    },
+    {
+      "instructorId": "1",
+      "name": "UI/UX Designer",
+      "dateStart": "01/01/2023",
+      "dateEnd": "05/02/2023",
+      "state": "1",
+      "id": 3,
+      "image": "https://www.acquisition-international.com/wp-content/uploads/2021/09/UI-UX-Design.jpg"
+
+
     }
   ],
   "blacklist": [

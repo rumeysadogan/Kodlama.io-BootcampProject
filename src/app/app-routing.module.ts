@@ -1,3 +1,4 @@
+import { HomepageComponent } from './components/homepage/homepage.component';
 import { LoginComponent } from './components/login/login.component';
 import { GetAllBlacklistComponent } from './components/blacklist/get-all-blacklist/get-all-blacklist.component';
 import { GetAllEmployeeComponent } from './components/employee/get-all-employee/get-all-employee.component';
@@ -65,6 +66,7 @@ const routes: Routes = [
   {path:"register", component:RegisterComponent},
   { path:'instructorlogin',component:LoginInstructorComponent},
   { path:'applicantlogin',component:LoginApplicantComponent},
+  {path:"homepage", component:HomepageComponent}
 
 ];
 

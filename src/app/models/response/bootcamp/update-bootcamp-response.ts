@@ -5,5 +5,6 @@ export interface IUpdateBootcampResponseModel {
     dateStart: string;
     dateEnd: string;
     state: number;
+    image:string;
   }
   
