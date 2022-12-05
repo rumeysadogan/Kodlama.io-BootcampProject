@@ -8,8 +8,24 @@
       <div class="card-body">
         <form [formGroup]="blacklistAddForm">
           <div class="mb-3">
-            <label for="firstName">Applicant Id</label>
-            <div class="form-group">
+            <label for="firstName">Applicant</label>
+            <div style="margin-top: 5px" class="form-group">
+              <select
+                class="form-select"
+                style="padding: 0.7em"
+                formControlName="applicantId"
+              >
+                <option
+                  *ngFor="let applicant of applicants"
+                  value="{{ applicant.id }}"
+                  id="instructorId"
+                  class="form-control"
+                >
+                  {{ applicant.firstName }} {{ applicant.lastName }}
+                </option>
+              </select>
+            </div>
+            <!-- <div class="form-group">
               <input
                 type="text"
                 id="applicantId"
@@ -17,7 +33,7 @@
                 class="form-control"
                 placeholder="Applicant Id"
               />
-            </div>
+            </div> -->
             <div style="margin-top: 5px" class="form-group">
               <input
                 type="text"

@@ -1,4 +1,3 @@
-import { RegisterComponent } from './components/register/register.component';
 import { LoginComponent } from './components/login/login.component';
 import { GetAllBlacklistComponent } from './components/blacklist/get-all-blacklist/get-all-blacklist.component';
 import { GetAllEmployeeComponent } from './components/employee/get-all-employee/get-all-employee.component';
@@ -26,6 +25,9 @@ import { CreateBootcampComponent } from './components/bootcamp/create-bootcamp/c
 import { UpdateBootcampComponent } from './components/bootcamp/update-bootcamp/update-bootcamp.component';
 import { CreateEmployeeComponent } from './components/employee/create-employee/create-employee.component';
 import { UpdateEmployeeComponent } from './components/employee/update-employee/update-employee.component';
+import { LoginInstructorComponent } from './components/login-instructor/login-instructor.component';
+import { LoginApplicantComponent } from './components/login-applicant/login-applicant.component';
+import { RegisterComponent } from './components/register/register.component';
 
 const routes: Routes = [
   //instructor
@@ -60,7 +62,10 @@ const routes: Routes = [
   { path: 'update-employee/:id', component: UpdateEmployeeComponent },
 
   { path:'employeelogin',component:LoginComponent },
-  {path:"register", component:RegisterComponent}
+  {path:"register", component:RegisterComponent},
+  { path:'instructorlogin',component:LoginInstructorComponent},
+  { path:'applicantlogin',component:LoginApplicantComponent},
+
 ];
 
 @NgModule({
