@@ -1,5 +1,3 @@
-import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
 import { IGetAllEmployeeResponseModel } from './../../../models/response/employee/getAllEmployee-response';
 import { ActivatedRoute } from '@angular/router';
 import { EmployeeService } from './../../../services/employee/employee.service';
