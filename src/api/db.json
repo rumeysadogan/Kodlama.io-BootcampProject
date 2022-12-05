@@ -9,6 +9,16 @@
       "nationalIdentity": 12345678912,
       "dateOfBirth": "10/11/1997",
       "about": "uzun kız"
+    },
+    {
+      "id": 2,
+      "firstName": "Mert",
+      "lastName": "Subaşı",
+      "email": "mert@gmail.com",
+      "password": "12345",
+      "nationalIdentity": 12345678912,
+      "dateOfBirth": "10/11/1997",
+      "about": "lastikçi"
     }
   ],
   "instructor": [
@@ -66,7 +76,7 @@
     },
     {
       "instructorId": 2,
-      "name": "Fatih Kadir Akın",
+      "name": "BackEnd",
       "dateStart": "21.12.2022",
       "dateEnd": "30.12.2022",
       "state": "1",
@@ -76,7 +86,7 @@
   "blacklist": [
     {
       "id": 1,
-      "applicantId": 1,
+      "applicantId": 2,
       "date": "30/11/2022",
       "reason": "bencil adam"
     }
