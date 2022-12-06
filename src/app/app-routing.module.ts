@@ -31,6 +31,9 @@ import { LoginApplicantComponent } from './components/login-applicant/login-appl
 import { RegisterComponent } from './components/register/register.component';
 
 const routes: Routes = [
+  {path:"homepage",component:HomepageComponent,children:[
+    {path:"admin-bootcamp/:id",component:GetBootcampComponent}
+  ]},
   //instructor
   { path: 'create-intructor', component: CreateInstructorComponent },
   { path: 'instructor/:id', component: GetInstructorComponent },
@@ -62,12 +65,12 @@ const routes: Routes = [
   { path: 'employees', component: GetAllEmployeeComponent },
   { path: 'update-employee/:id', component: UpdateEmployeeComponent },
 
-  { path:'employeelogin',component:LoginComponent },
-  {path:"register", component:RegisterComponent},
-  { path:'instructorlogin',component:LoginInstructorComponent},
-  { path:'applicantlogin',component:LoginApplicantComponent},
-  {path:"homepage", component:HomepageComponent}
-
+  { path: 'employeelogin', component: LoginComponent },
+  { path: 'register', component: RegisterComponent },
+  { path: 'instructorlogin', component: LoginInstructorComponent },
+  { path: 'applicantlogin', component: LoginApplicantComponent },
+  { path: 'homepage', component: HomepageComponent },
+  { path: '', component: HomepageComponent },
 ];
 
 @NgModule({

@@ -39,10 +39,5 @@ export class CreateApplicantComponent implements OnInit {
         console.log(data)
       })
     }
-
   }
-
-
- 
-
 }
