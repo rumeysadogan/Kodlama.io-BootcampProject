@@ -5,5 +5,6 @@ export interface ICreateBootcampRequestModel {
     dateStart: string;
     dateEnd: string;
     state: number;
+    image:string;
   }
   

@@ -24,5 +24,8 @@ export class GetAllEmployeeComponent implements OnInit {
     .getAllEmployee()
     .subscribe((data) => (this.employees = data));
   }
-
+  deleteEmployee(employee){
+    this.employees = this.employees.filter((a) => a !== employee);
+    this.employeeService.deleteEmployee(employee).subscribe();
+  }
 }

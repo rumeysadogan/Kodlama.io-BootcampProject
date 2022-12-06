@@ -1,5 +1,4 @@
-import { LoginApplicantComponent } from './components/login-applicant/login-applicant.component';
-import { LoginInstructorComponent } from './components/login-instructor/login-instructor.component';
+import { HomepageComponent } from './components/homepage/homepage.component';
 import { LoginComponent } from './components/login/login.component';
 import { GetAllBlacklistComponent } from './components/blacklist/get-all-blacklist/get-all-blacklist.component';
 import { GetAllEmployeeComponent } from './components/employee/get-all-employee/get-all-employee.component';
@@ -27,8 +26,14 @@ import { CreateBootcampComponent } from './components/bootcamp/create-bootcamp/c
 import { UpdateBootcampComponent } from './components/bootcamp/update-bootcamp/update-bootcamp.component';
 import { CreateEmployeeComponent } from './components/employee/create-employee/create-employee.component';
 import { UpdateEmployeeComponent } from './components/employee/update-employee/update-employee.component';
+import { LoginInstructorComponent } from './components/login-instructor/login-instructor.component';
+import { LoginApplicantComponent } from './components/login-applicant/login-applicant.component';
+import { RegisterComponent } from './components/register/register.component';
 
 const routes: Routes = [
+  {path:"homepage",component:HomepageComponent,children:[
+    {path:"admin-bootcamp/:id",component:GetBootcampComponent}
+  ]},
   //instructor
   { path: 'create-intructor', component: CreateInstructorComponent },
   { path: 'instructor/:id', component: GetInstructorComponent },
@@ -60,10 +65,12 @@ const routes: Routes = [
   { path: 'employees', component: GetAllEmployeeComponent },
   { path: 'update-employee/:id', component: UpdateEmployeeComponent },
 
-  { path:'employeelogin',component:LoginComponent },
-  { path:'instructorlogin',component:LoginInstructorComponent},
-  { path:'applicantlogin',component:LoginApplicantComponent},
-
+  { path: 'employeelogin', component: LoginComponent },
+  { path: 'register', component: RegisterComponent },
+  { path: 'instructorlogin', component: LoginInstructorComponent },
+  { path: 'applicantlogin', component: LoginApplicantComponent },
+  { path: 'homepage', component: HomepageComponent },
+  { path: '', component: HomepageComponent },
 ];
 
 @NgModule({

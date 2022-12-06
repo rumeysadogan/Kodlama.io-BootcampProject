@@ -5,5 +5,7 @@ export interface ICreateBootcampResponseModel {
     dateStart: string;
     dateEnd: string;
     state: number;
+    image:string;
+    
   }
   

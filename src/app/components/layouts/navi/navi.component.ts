@@ -6,10 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navi.component.css']
 })
 export class NaviComponent implements OnInit {
-
+  isAuth:boolean;
   constructor() { }
 
   ngOnInit(): void {
+
   }
+//  logout(){
+//    if(this.isAuth){
+// localStorage.clear();
+// this.router.navigate(["applicantlogin"]);
+//    }
+//   }
 
 }
