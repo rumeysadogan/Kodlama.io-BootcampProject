@@ -12,5 +12,8 @@ export interface IGetAllInstructorResponseModel {
   instagram:string;
   twitter:string;
   github:string;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8e55142314722c8703f7e5a79bf6fc9d12785cae
 }

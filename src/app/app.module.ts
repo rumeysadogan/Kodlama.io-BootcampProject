@@ -39,6 +39,7 @@ import { SidebarComponent } from './components/layouts/sidebar/sidebar.component
 import { SidebarRightComponent } from './components/layouts/sidebar-right/sidebar-right.component';
 import { LoginInstructorComponent } from './components/login-instructor/login-instructor.component';
 import { LoginApplicantComponent } from './components/login-applicant/login-applicant.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -84,6 +85,7 @@ import { LoginApplicantComponent } from './components/login-applicant/login-appl
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

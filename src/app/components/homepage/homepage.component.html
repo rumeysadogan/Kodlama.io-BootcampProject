@@ -1,29 +1,26 @@
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- <head> -->
+<!-- 
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
     <!-- <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
   <link rel="icon" type="image/png" href="../assets/img/favicon.png"> -->
-    <title>
-        ÇASGEM BOOTCAMP
-    </title>
+  
     <!--     Fonts and icons     -->
-    <link
+    <!-- <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Noto+Sans:300,400,500,600,700,800|PT+Mono:300,400,500,600,700"
-        rel="stylesheet" />
+        rel="stylesheet" /> -->
     <!-- Nucleo Icons -->
     <!-- <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
   <link href="../assets/css/nucleo-svg.css" rel="stylesheet" /> -->
     <!-- Font Awesome Icons -->
-    <script src="https://kit.fontawesome.com/349ee9c857.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/349ee9c857.js" crossorigin="anonymous"></script> -->
     <!-- <link href="../assets/css/nucleo-svg.css" rel="stylesheet" /> -->
     <!-- CSS Files -->
     <!-- <link id="pagestyle" href="../assets/css/corporate-ui-dashboard.css?v=1.0.0" rel="stylesheet" /> -->
-</head>
+<!-- </head> -->
 
-<body class="g-sidenav-show  bg-gray-100">
-
-    <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
-        <app-navi></app-navi>
+<body>
+    <app-navi></app-navi>
+       
         <div class="container">
             <div class="d-lg-flex">
                 <div class="card border-0 me-lg-4 mb-lg-0 mb-4" *ngFor="let bootcamp of bootcamps" >
@@ -38,7 +35,7 @@
                         <p class="h-1 mt-4">{{bootcamp.name}}</p>
                         <p class="text-muted mt-3"> Kursumuz {{bootcamp.dateStart}} - {{bootcamp.dateEnd}} tarihleri arasında olacaktır. </p>
                         <div class="d-flex align-items-center justify-content-between mt-3 pb-3">
-                            <div class="btn btn-primary" routerLink="/bootcamp/id">Detaylar<span class="fas fa-arrow-right"></span></div>
+                            <div class="btn btn-primary" routerLink="/applicantlogin">Detaylar<span class="fas fa-arrow-right"></span></div>
                             <div class="d-flex align-items-center justify-content-center foot">
                               
                             </div>
@@ -47,11 +44,11 @@
                 </div>
               
             </div>
+   
         </div>
-
-       
-    </main>
-
+        <div class=" text-center position-absolute fixed-bottom m-4">
+  <h6 class="text-dark text-sm mt-5">Copyright © 2022 SERM</h6>
+      </div>
     <!--   Core JS Files   -->
     <!-- <script src="../assets/js/core/popper.min.js"></script>
   <script src="../assets/js/core/bootstrap.min.js"></script>
@@ -318,4 +315,7 @@
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <!-- Control Center for Corporate UI Dashboard: parallax effects, scripts for the example pages etc -->
     <script src="../assets/js/corporate-ui-dashboard.min.js?v=1.0.0"></script>
+
 </body>
+
+<router-outlet></router-outlet>
