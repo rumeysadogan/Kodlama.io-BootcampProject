@@ -28,6 +28,10 @@ export class ApplicationService {
     return this.httpClient.put(this.apiurl +'/' +id,application);
   }
 
+  applicationDelete(data):Observable<IGetApplicationResponseModel>{
+    return this.httpClient.delete<IGetAllApplicationResponseModel>(this.apiurl+'/' + data.id)
+  }
+
 
 }
 

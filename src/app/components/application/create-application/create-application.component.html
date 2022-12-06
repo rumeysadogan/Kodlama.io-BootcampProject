@@ -6,24 +6,56 @@
             <div class="card-body">
                 <form [formGroup]="createApplicationForm">
                     
-                    <div class="form-group">
+                    <!-- <div class="form-group">
                         <input type="number"
                         formControlName="applicantId" class="form-control"
                         placeholder="Aday id si giriniz."/>
 
+                    </div> -->
+                    <label for="applicantId">Instructor</label>
+                    <div style="margin-top:5px" class="form-group">
+                        <select class="form-select" style="padding:0.7em" formControlName="applicantId">
+                        <option *ngFor="let applicant of applicants"
+                        value="{{applicant.id}}"
+                        id="applicantId"
+                        class="form-control">
+                        {{applicant.firstName}}{{applicant.lastName}}
+
+                        </option></select>
                     </div>
-                    <div class="form-group">
+                    <label for="bootcampId">Bootcamp</label>
+                    <div style="margin-top:5px" class="form-group">
+                        <select class="form-select" style="padding:0.7em" formControlName="bootcampId">
+                        <option *ngFor="let bootcamp of bootcamps"
+                        value="{{bootcamp.id}}"
+                        id="applicantId"
+                        class="form-control">
+                        {{bootcamp.name}}
+
+                        </option></select>
+                    </div>
+                    <!-- <div class="form-group">
                         <input type="number"
                         formControlName="bootcampId" class="form-control"
                         placeholder="Bootcamp id si giriniz."/>
 
+                    </div> -->
+                    <label for="state">State</label>
+                    <div style="margin-top:5px" class="form-group">
+                        <select class="form-select" style="padding:0.7em" formControlName="state">
+                        <option >0</option>
+                        <option >1</option>
+                       
+                        
+
+                        </select>
                     </div>
-                    <div class="form-group">
-                        <input type="number"
+                    <!-- <div class="form-group">
+                        <input type="text"
                         formControlName="state" class="form-control"
                         placeholder="State i giriniz."/>
 
-                    </div>
+                    </div> -->
  
                 </form>
             </div>

@@ -19,7 +19,10 @@
       <td>{{ applicant.nationalIdentity }}</td>
       <td>{{ applicant.dateOfBirth }}</td>
       <td>{{ applicant.about }}</td>
+      <td><button type="button" class="btn btn-primary" routerLink="/update-applicant/{{applicant.id}}">Güncelle</button></td>
+      <td><button type="button" class="btn btn-primary" (click)="deleteApplicant(applicant)">Sil</button></td>
     </tr>
   </tbody>
 </table>
+
 
