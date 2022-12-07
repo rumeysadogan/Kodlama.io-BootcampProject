@@ -22,8 +22,9 @@ export class CreateBlacklistComponent implements OnInit {
 
   ngOnInit(): void {
     this.createAddBlacklistForm();
-    this.getAllApplicants();
   }
+
+  id:number;
 
   getAllApplicants() {
     this.applicantService.getAllApplicant().subscribe((data) => {
@@ -32,20 +33,36 @@ export class CreateBlacklistComponent implements OnInit {
   }
   createAddBlacklistForm() {
     this.blacklistAddForm = this.formBuilder.group({
-      id: ['', Validators.required],
-      applicantId: ['', Validators.required],
       date: ['', Validators.required],
       reason: ['', Validators.required],
     });
   }
+
+  getApplicantById(id){
+    this.applicantService.getApplicantById(id).subscribe((data)=>{
+      console.log(data.firstName);
+    })
+
+  }
   add() {
     if (this.blacklistAddForm.valid) {
       let BlacklistModel = Object.assign({}, this.blacklistAddForm.value);
-      this.blacklistService.addBlacklist(BlacklistModel).subscribe((data) => {
-        alert('Kayıt Başarılı');
-      });
+      this.activatedRoute.params.subscribe((params)=>{
+        BlacklistModel.applicantName=params.firstName+' '+params.lastName;
+        this.blacklistService.addBlacklist(BlacklistModel).subscribe((data)=>{
+
+        })
+      })
+      
+    this.updateState(); 
     } else {
       alert('Hatalı Kayıt');
     }
+  }
+
+  updateState(){
+    this.applicantService.updateState(this.id,0).subscribe((value)=>{
+      
+    })
   }
 }
