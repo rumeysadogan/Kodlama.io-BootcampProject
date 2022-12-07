@@ -27,4 +27,9 @@ export class InstructorService {
   updateInstructor(id: number, instructor: IUpdateInstructorRequestModel) {
     return this.httpClient.put(this.apiUrl + '/' + id, instructor);
   }
+  instructorDelete(data): Observable<IGetAllInstructorResponseModel> {
+    return this.httpClient.delete<IGetAllInstructorResponseModel>(
+      this.apiUrl + '/' + data.id
+    );
+  }
 }

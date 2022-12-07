@@ -6,13 +6,14 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-get-all-bootcamp',
   templateUrl: './get-all-bootcamp.component.html',
-  styleUrls: ['./get-all-bootcamp.component.css']
+  styleUrls: ['./get-all-bootcamp.component.css'],
 })
 export class GetAllBootcampComponent implements OnInit {
-
-  bootcamps:IGetAllBootcampResponseModel[]=[];
-  constructor(private bootcampService:BootcampService,
-    private activatedRoute:ActivatedRoute) { }
+  bootcamps: IGetAllBootcampResponseModel[] = [];
+  constructor(
+    private bootcampService: BootcampService,
+    private activatedRoute: ActivatedRoute
+  ) {}
 
   ngOnInit(): void {
     this.activatedRoute.params.subscribe((params) => this.getAllBootcamp());
@@ -23,6 +24,8 @@ export class GetAllBootcampComponent implements OnInit {
       .getAllBootcamp()
       .subscribe((data) => (this.bootcamps = data));
   }
-
-
+  deleteBootcamp(data): void {
+    this.bootcamps = this.bootcamps.filter((a) => a !== data);
+    this.bootcampService.bootcampDelete(data).subscribe();
+  }
 }
