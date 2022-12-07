@@ -22,6 +22,7 @@ export class CreateBlacklistComponent implements OnInit {
 
   ngOnInit(): void {
     this.createAddBlacklistForm();
+    this.getAllApplicants();
   }
 
   id:number;
@@ -48,11 +49,16 @@ export class CreateBlacklistComponent implements OnInit {
     if (this.blacklistAddForm.valid) {
       let BlacklistModel = Object.assign({}, this.blacklistAddForm.value);
       this.activatedRoute.params.subscribe((params)=>{
-        BlacklistModel.applicantName=params.firstName+' '+params.lastName;
+        BlacklistModel.applicantId=params['id'];
+        this.id=params['id'];
+      });
+      this.applicantService.getApplicantById(BlacklistModel.applicantId).subscribe((data)=>{
+        BlacklistModel.applicantName=data.firstName+' '+data.lastName;
+
         this.blacklistService.addBlacklist(BlacklistModel).subscribe((data)=>{
 
-        })
-      })
+        });
+      });
       
     this.updateState(); 
     } else {

@@ -7,4 +7,5 @@ export interface ICreateApplicantResponseModel{
     nationalIdentity:number
     dateOfBirth:string
     about:string
+    state:number
 }

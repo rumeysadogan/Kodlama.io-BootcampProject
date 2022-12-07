@@ -7,4 +7,5 @@ export interface IGetAllApplicantResponseModel {
     nationalIdentity:number;
     dateOfBirth:string;
     about:string;
+    state:number;
 }
