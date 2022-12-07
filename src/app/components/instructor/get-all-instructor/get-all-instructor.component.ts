@@ -23,4 +23,8 @@ export class GetAllInstructorComponent implements OnInit {
       .getAllInstructor()
       .subscribe((data) => (this.instructors = data));
   }
+  deleteInstructor(data): void {
+    this.instructors = this.instructors.filter((a) => a !== data);
+    this.instructorService.instructorDelete(data).subscribe();
+  }
 }

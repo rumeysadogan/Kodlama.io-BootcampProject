@@ -31,4 +31,9 @@ export class BootcampService {
   updateBootcamp(id: number, bootcamp: IUpdateBootcampRequestModel) {
     return this.httpClient.put(this.apiUrl + '/' + id, bootcamp);
   }
+  bootcampDelete(data): Observable<IGetAllBootcampResponseModel> {
+    return this.httpClient.delete<IGetAllBootcampResponseModel>(
+      this.apiUrl + '/' + data.id
+    );
+  }
 }
