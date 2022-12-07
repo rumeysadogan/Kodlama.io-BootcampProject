@@ -7,4 +7,5 @@ export interface IGetInstructorResponseModel {
   companyName: string;
   nationalIdentity: number;
   dateOfBirth: string;
+  image:string;
 }
