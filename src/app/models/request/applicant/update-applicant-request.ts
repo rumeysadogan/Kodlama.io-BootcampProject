@@ -7,4 +7,5 @@ export interface IUpdateApplicantRequestModel{
     nationalIdentity:number
     dateOfBirth:string
     about:string
+    state:number
 }  
