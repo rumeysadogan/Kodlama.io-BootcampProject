@@ -41,6 +41,56 @@
       "id": 4
     }
   ],
+<<<<<<< HEAD
+  "instructor": 
+  [
+      {
+        "firstName": "Engin",
+        "lastName": "DEMİROĞ",
+        "email": "engin@gmail.com",
+        "password": "12345",
+        "companyName": "Kodlama.io",
+        "nationalIdentity": 12345678914,
+        "dateOfBirth": "01/01/1980",
+        "id": 1,
+        "image":"https://pbs.twimg.com/profile_images/1404479261566713856/_MklDkhx_400x400.jpg",
+        "title":"Yazılım Geliştirme Danışmanı ve Eğitmeni",
+        "instagram":"https://www.instagram.com/engindemirog/",
+        "twitter":"https://twitter.com/engindemirog",
+        "github":"https://github.com/engindemirog"
+      },
+      {
+        "firstName": "Mustafa Murat",
+        "lastName": "COŞKUN",
+        "email": "murat@gmail.com",
+        "password": "12345",
+        "companyName": "murat.com",
+        "nationalIdentity": 12345678814,
+        "dateOfBirth": "01/01/1985",
+        "id": 2,
+        "image":"https://avatars.githubusercontent.com/u/15064847?v=4",
+        "title":"Yazılım Geliştirici",
+        "instagram":"https://www.instagram.com/mustafamuratcoskunn/",
+        "twitter":"https://twitter.com/mustafam_coskun",
+        "github":"https://github.com/mustafamuratcoskun"
+      },
+      {
+        "firstName": "Erdoğan",
+        "lastName": "ÖZTÜRK",
+        "email": "erdogan@gmail.com",
+        "password": "12345",
+        "companyName": "erdogan.com",
+        "nationalIdentity": 12345658914,
+        "dateOfBirth": "01/01/1980",
+        "id": 3,
+        "image":"https://pbs.twimg.com/profile_images/809026982172360704/aQGdnZzH_400x400.jpg",
+        "title":"Yazılım Mimarı",
+        "instagram":"https://www.instagram.com/dijital_dervis/",
+        "twitter":"https://twitter.com/erdoganblog",
+        "github":"https://github.com/dijitaldervis"
+      }
+    ],
+=======
   "instructor": [
     {
       "firstName": "Engin",
@@ -88,6 +138,7 @@
       "github":"https://github.com/dijitaldervis"
     }
   ],
+>>>>>>> 8e55142314722c8703f7e5a79bf6fc9d12785cae
   "employee": [
     {
       "id": 1,
@@ -134,7 +185,7 @@
   "blacklist": [
     {
       "id": 1,
-      "applicantId": 1,
+      "applicantId": 2,
       "date": "30/11/2022",
       "reason": "bencil adam"
     }

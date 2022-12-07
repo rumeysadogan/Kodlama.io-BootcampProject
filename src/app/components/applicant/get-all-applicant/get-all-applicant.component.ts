@@ -1,6 +1,7 @@
 import { ApplicantService } from './../../../services/applicant/applicant.service';
 import { IGetAllApplicantResponseModel } from './../../../models/response/applicant/getAllApplicant-response';
 import { Component, OnInit } from '@angular/core';
+import { TitleStrategy } from '@angular/router';
 
 @Component({
   selector: 'app-get-all-applicant',
@@ -19,5 +20,12 @@ export class GetAllApplicantComponent implements OnInit {
   getAllApplicant(){
     this.applicantService.getAllApplicant().subscribe(data=>this.applicants=data)
   }
+
+  deleteApplicant(data):void{
+    this.applicants=this.applicants.filter((c)=> c !== data);
+    this.applicantService.applicantDelete(data).subscribe();
+  }
+
+  
 
 }

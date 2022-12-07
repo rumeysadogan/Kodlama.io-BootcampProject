@@ -1,3 +1,5 @@
+import { IUpdateInstructorRequestModel } from './../../../models/request/instructor/update-instructor-request';
+import { InstructorService } from './../../../services/instructor/instructor.service';
 import { IGetBootcampResponseModel } from './../../../models/response/bootcamp/getBootcamp-response';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
@@ -12,17 +14,20 @@ import { Component, OnInit } from '@angular/core';
 export class UpdateBootcampComponent implements OnInit {
   bootcamp: IGetBootcampResponseModel;
   bootcampUpdateForm: FormGroup;
+  instructors: IUpdateInstructorRequestModel[];
 
   constructor(
     private bootcampService: BootcampService,
     private activatedRoute: ActivatedRoute,
-    private formBuilder: FormBuilder
+    private formBuilder: FormBuilder,
+    private instructorService: InstructorService
   ) {}
 
   ngOnInit(): void {
     this.activatedRoute.params.subscribe((params) => {
       this.loadBootcampDetail(params['id']);
     });
+    this.getAllInstructors();
   }
 
   loadBootcampDetail(id) {
@@ -32,6 +37,11 @@ export class UpdateBootcampComponent implements OnInit {
     });
   }
 
+  getAllInstructors() {
+    this.instructorService.getAllInstructor().subscribe((data) => {
+      this.instructors = data;
+    });
+  }
   createBootcampUpdateForm() {
     this.bootcampUpdateForm = this.formBuilder.group({
       instructorId: [this.bootcamp.instructorId, Validators.required],

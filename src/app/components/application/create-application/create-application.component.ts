@@ -1,7 +1,11 @@
+import { IUpdateBootcampRequestModel } from './../../../models/request/bootcamp/update-bootcamp-request';
+import { IUpdateApplicantRequestModel } from './../../../models/request/applicant/update-applicant-request';
+import { ApplicantService } from './../../../services/applicant/applicant.service';
 import { ApplicationService } from './../../../services/application/application.service';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { ICreateApplicationRequestModel } from './../../../models/request/application/create-application-request';
 import { Component, OnInit } from '@angular/core';
+import { BootcampService } from 'src/app/services/bootcamp/bootcamp.service';
 
 @Component({
   selector: 'app-create-application',
@@ -12,11 +16,16 @@ export class CreateApplicationComponent implements OnInit {
 
   createApplicationForm:FormGroup;
   createApplicationModel:ICreateApplicationRequestModel[]=[];
+  applicants:IUpdateApplicantRequestModel[];
+  bootcamps:IUpdateBootcampRequestModel[];
 
-  constructor(private applicationService:ApplicationService ,private formBuilder:FormBuilder) { }
+  constructor(private applicationService:ApplicationService ,private formBuilder:FormBuilder,
+    private applicantService:ApplicantService,private bootcampService:BootcampService) { }
 
   ngOnInit(): void {
     this.createCreateApplicationForm();
+    this.getAllApplicant();
+    this.getAllBootcamp();
   }
   createCreateApplicationForm() {
     this.createApplicationForm = this.formBuilder.group({
@@ -36,6 +45,18 @@ export class CreateApplicationComponent implements OnInit {
       })
     }
     
+  }
+
+  getAllApplicant(){
+    this.applicantService.getAllApplicant().subscribe((data)=>{
+      this.applicants=data;
+    })
+  }
+
+  getAllBootcamp(){
+    this.bootcampService.getAllBootcamp().subscribe((data)=>{
+      this.bootcamps=data;
+    })
   }
 
 

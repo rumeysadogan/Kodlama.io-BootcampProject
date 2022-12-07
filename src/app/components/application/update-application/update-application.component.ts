@@ -1,3 +1,7 @@
+import { IUpdateBootcampRequestModel } from './../../../models/request/bootcamp/update-bootcamp-request';
+import { BootcampService } from 'src/app/services/bootcamp/bootcamp.service';
+import { ApplicantService } from './../../../services/applicant/applicant.service';
+import { IUpdateApplicantRequestModel } from './../../../models/request/applicant/update-applicant-request';
 import { ActivatedRoute } from '@angular/router';
 import { ApplicationService } from './../../../services/application/application.service';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
@@ -13,14 +17,20 @@ export class UpdateApplicationComponent implements OnInit {
 
   application:IGetApplicationResponseModel;
   applicationUpdateForm:FormGroup;
+  applicants:IUpdateApplicantRequestModel[];
+  bootcamps:IUpdateBootcampRequestModel[];
   constructor(private applicationService:ApplicationService,
     private activatedRoute:ActivatedRoute,
-    private formBuilder:FormBuilder) { }
+    private formBuilder:FormBuilder,
+    private applicantService:ApplicantService,
+    private bootcampService:BootcampService) { }
 
   ngOnInit(): void {
     this.activatedRoute.params.subscribe(params=>{
       this.loadApplicationDetail(params["id"]);
     })
+    this.getAllApplicant();
+    this.getAllBotcamps();
   }
 
   loadApplicationDetail(id){
@@ -44,6 +54,17 @@ export class UpdateApplicationComponent implements OnInit {
     this.applicationUpdateForm.value).subscribe((response)=>console.log('update'));
   }
 
+  getAllApplicant(){
+    this.applicantService.getAllApplicant().subscribe((data)=>{
+      this.applicants=data;
+    })
+
+  }
+  getAllBotcamps(){
+    this.bootcampService.getAllBootcamp().subscribe((data)=>{
+      this.bootcamps=data;
+    })
+  }
   
 
 

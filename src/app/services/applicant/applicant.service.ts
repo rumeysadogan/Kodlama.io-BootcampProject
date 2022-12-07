@@ -33,4 +33,9 @@ export class ApplicantService {
     return this.httpClient.put(this.apiurl+ '/' + id, applicant);
   }
 
+  applicantDelete(data):Observable<IGetAllApplicantResponseModel>{
+    return this.httpClient.delete<IGetAllApplicantResponseModel>(this.apiurl+'/' +data.id);
+
+  }
+
 }
