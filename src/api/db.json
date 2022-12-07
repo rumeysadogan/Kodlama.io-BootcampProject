@@ -8,7 +8,11 @@
       "password": "12345",
       "nationalIdentity": 12345678912,
       "dateOfBirth": "10/11/1997",
-      "about": "uzun kız"
+      "about": "uzun kız",
+      "image": "https://cdn-icons-png.flaticon.com/512/219/219969.png",
+      "role": "roleApplicant",
+      "state": 1
+
     },
     {
       "id": 2,
@@ -18,32 +22,55 @@
       "password": "12345",
       "nationalIdentity": 12345678912,
       "dateOfBirth": "10/11/1997",
-      "about": "lastikçi"
+      "about": "lastikçi",
+      "image": "https://www.clipartmax.com/png/middle/257-2572603_user-man-social-avatar-profile-icon-man-avatar-in-circle.png",
+      "role": "roleApplicant",
+      "state": 1
     },
     {
-      "firstName": "aaa",
-      "lastName": "ssss",
-      "email": "aaa@hotmail.com",
+      "firstName": "Rümeysa",
+      "lastName": "Doğan",
+      "email": "rumeysa@hotmail.com",
       "password": "123456",
       "nationalIdentity": 12313465467,
-      "dateOfBirth": "12/12/2022",
-      "about": "asdlasdasldm",
-      "id": 3
+      "dateOfBirth": "12/02/1995",
+      "about": "güzel kız",
+      "id": 3,
+      "image": "https://cdn-icons-png.flaticon.com/512/147/147135.png",
+      "role": "roleApplicant",
+      "state": 1
     },
     {
       "firstName": "Hediye",
-      "lastName": "Paket",
+      "lastName": "Yıldırım",
       "email": "gift@gmail.com",
       "password": "12345",
       "nationalIdentity": 12345678987,
-      "dateOfBirth": "12/02/2022",
+      "dateOfBirth": "05/10/1998",
       "about": "aklsdasklkandlkas dlksuflkdfsfsdjfks nkmvhfskjdhf vdsbh",
-      "id": 4
+      "id": 4,
+      "image": "https://cdn-icons-png.flaticon.com/512/219/219989.png",
+      "role": "roleApplicant",
+      "state": 1
+    },
+    {
+      "firstName": "Ahmet",
+      "lastName": "Karagöz",
+      "email": "ahmet@gmail.com",
+      "password": "12345",
+      "nationalIdentity": 12345678987,
+      "dateOfBirth": "10/10/1997",
+      "about": "aklsdasklkandlkas dlksuflkdfsfsdjfks nkmvhfskjdhf vdsbh",
+      "id": 5,
+      "image": "https://cdn-icons-png.flaticon.com/512/219/219989.png",
+      "role": "roleApplicant",
+      "state": 0
     }
   ],
   "instructor": 
   [
       {
+        "id": 1,
         "firstName": "Engin",
         "lastName": "DEMİROĞ",
         "email": "engin@gmail.com",
@@ -51,14 +78,15 @@
         "companyName": "Kodlama.io",
         "nationalIdentity": 12345678914,
         "dateOfBirth": "01/01/1980",
-        "id": 1,
         "image":"https://pbs.twimg.com/profile_images/1404479261566713856/_MklDkhx_400x400.jpg",
         "title":"Yazılım Geliştirme Danışmanı ve Eğitmeni",
         "instagram":"https://www.instagram.com/engindemirog/",
         "twitter":"https://twitter.com/engindemirog",
-        "github":"https://github.com/engindemirog"
+        "github":"https://github.com/engindemirog",
+        "role": "roleInstructor"
       },
       {
+        "id": 2,
         "firstName": "Mustafa Murat",
         "lastName": "COŞKUN",
         "email": "murat@gmail.com",
@@ -66,14 +94,15 @@
         "companyName": "murat.com",
         "nationalIdentity": 12345678814,
         "dateOfBirth": "01/01/1985",
-        "id": 2,
         "image":"https://avatars.githubusercontent.com/u/15064847?v=4",
         "title":"Yazılım Geliştirici",
         "instagram":"https://www.instagram.com/mustafamuratcoskunn/",
         "twitter":"https://twitter.com/mustafam_coskun",
-        "github":"https://github.com/mustafamuratcoskun"
+        "github":"https://github.com/mustafamuratcoskun",
+        "role": "roleInstructor"
       },
       {
+        "id": 3,
         "firstName": "Erdoğan",
         "lastName": "ÖZTÜRK",
         "email": "erdogan@gmail.com",
@@ -81,12 +110,12 @@
         "companyName": "erdogan.com",
         "nationalIdentity": 12345658914,
         "dateOfBirth": "01/01/1980",
-        "id": 3,
         "image":"https://pbs.twimg.com/profile_images/809026982172360704/aQGdnZzH_400x400.jpg",
         "title":"Yazılım Mimarı",
         "instagram":"https://www.instagram.com/dijital_dervis/",
         "twitter":"https://twitter.com/erdoganblog",
-        "github":"https://github.com/dijitaldervis"
+        "github":"https://github.com/dijitaldervis",
+        "role": "roleInstructor"
       }
     ],
 
@@ -99,7 +128,8 @@
       "password": "12345",
       "nationalIdentity": 12345678919,
       "dateOfBirth": "01/01/1990",
-      "position": "memur"
+      "position": "memur",
+      "role": "roleAdmin"
     }
   ],
   "bootcamp": [
@@ -110,7 +140,8 @@
       "dateStart": "14/11/2022",
       "dateEnd": "12/12/2022",
       "state": 1,
-      "image": "https://birparcatuhaftik.com/wp-content/uploads/2020/08/front-end-developer.jpg"
+      "image": "https://birparcatuhaftik.com/wp-content/uploads/2020/08/front-end-developer.jpg",
+      "instructorName": "Engin DEMİROĞ"
     },
     {
       "instructorId": 2,
@@ -119,24 +150,57 @@
       "dateEnd": "30/12/2022",
       "state": "1",
       "id": 2,
-      "image": "https://play-lh.googleusercontent.com/mHEywwrourM3N9Z94du0IqO7tVu0cm78E0NeYdUFUwDAvfPLtFt0jXMGbh8mIcapDio"
-    
+      "image": "https://play-lh.googleusercontent.com/mHEywwrourM3N9Z94du0IqO7tVu0cm78E0NeYdUFUwDAvfPLtFt0jXMGbh8mIcapDio",
+      "instructorName": "Mustafa Murat COŞKUN"
     },
     {
-      "instructorId": "1",
+      "instructorId": 3,
       "name": "UI/UX Designer",
       "dateStart": "01/01/2023",
       "dateEnd": "05/02/2023",
       "state": "1",
       "id": 3,
-      "image": "https://www.acquisition-international.com/wp-content/uploads/2021/09/UI-UX-Design.jpg"
+      "image": "https://www.acquisition-international.com/wp-content/uploads/2021/09/UI-UX-Design.jpg",
+      "instructorName": "Erdoğan ÖZTÜRK "
+    },
+    {
+      "id": 4,
+      "instructorId": 2,
+      "name": "Game Developer",
+      "dateStart": "22/05/2022",
+      "dateEnd": "12/07/2022",
+      "state": 1,
+      "image": "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20191206194406/Tips-For-an-Indie-Game-Developer.png",
+      "instructorName": "Mustafa Murat COŞKUN"
+    },
+    {
+      "id": 5,
+      "instructorId": 1,
+      "name": "Swift Programming",
+      "dateStart": "09/10/2022",
+      "dateEnd": "12/11/2022",
+      "state": 1,
+      "image": "https://ecoursedeals.com/wp-content/uploads/2018/06/1062284_9f5b_2.jpg",
+      "instructorName": "Engin DEMİROĞ"
+    },
+    {
+      "id": 6,
+      "instructorId": 3,
+      "name": "Java Programming",
+      "dateStart": "18/12/2022",
+      "dateEnd": "17/01/2023",
+      "state": 1,
+      "image": "https://i.pinimg.com/originals/df/16/7e/df167ee93f90bda5894c985140ea570b.jpg",
+      "instructorName": "Erdoğan ÖZTÜRK"
     }
+
   ],
 
   "blacklist": [
     {
       "id": 1,
-      "applicantId": 2,
+      "applicantId": 5,
+      "applicantName":"Ahmet Karagöz",
       "date": "30/11/2022",
       "reason": "bencil adam"
     }
@@ -145,14 +209,105 @@
     {
       "id": 1,
       "applicantId": 1,
+      "applicantName":"Selen Ece Özbay",
       "bootcampId": 1,
+      "bootcampName": "Frontend",
       "state": 1
     },
     {
       "id": 2,
-      "applicantId": 2,
-      "bootcampId": 1,
+      "applicantId": 3,
+      "applicantName": "Rümeysa Doğan",
+      "bootcampId": 3,
+      "bootcampName": "UX/UI Designer",
       "state": 1
     }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "firstName": "Selen",
+      "lastName": "Özbay",
+      "email": "selen@gmail.com",
+      "password": "12345",
+      "role": "roleApplicant",
+      "expiration": "dsgdsgdsg",
+      "token": "32545678657832"
+    },
+    {
+      "id": 2,
+      "firstName": "Mert",
+      "lastName": "Subaşı",
+      "email": "mert@gmail.com",
+      "password": "12345",
+      "role": "roleApplicant",
+      "expiration": "dsgdsgdsg",
+      "token": "325346784532"
+    },
+    { 
+      "id": 3,
+      "firstName": "Rümeysa",
+      "lastName": "Doğan",
+      "email": "rumeysa@hotmail.com",
+      "password": "123456", 
+      "role": "roleApplicant",
+      "state": 1,
+      "expiration": "dsgdsgdsg",
+      "token": "3253255676532532"
+    },
+    {  
+      "id": 4,
+      "firstName": "Hediye",
+      "lastName": "Yıldırım",
+      "email": "gift@gmail.com",
+      "password": "12345",
+      "role": "roleApplicant",
+      "state": 1,
+      "expiration": "dsgdsgdsg",
+      "token": "32354676436532532532"
+    },
+    {
+      "id": 5,
+      "firstName": "Engin",
+      "lastName": "DEMİROĞ",
+      "email": "engin@gmail.com",
+      "password": "12345",
+      "role": "roleInstructor",
+      "expiration": "dsgdsgdsg",
+      "token": "32532532533456782"
+    },
+    {
+      "id": 6,
+      "firstName": "Mustafa Murat",
+      "lastName": "COŞKUN",
+      "email": "murat@gmail.com",
+      "password": "12345",
+      "role": "roleInstructor",
+      "expiration": "dsgdsgdsg",
+      "token": "325322345532532"
+    },
+    {
+      "id": 7,
+      "firstName": "Erdoğan",
+      "lastName": "ÖZTÜRK",
+      "email": "erdogan@gmail.com",
+      "password": "12345",
+      "role": "roleInstructor",
+      "expiration": "dsgdsgdsg",
+      "token": "3253253098762532"
+    },
+    {
+      "id": 8,
+      "firstName": "Esra",
+      "lastName": "Yılmaz",
+      "email": "esra@gmail.com",
+      "password": "12345",
+      "role": "roleAdmin",
+      "expiration": "dsgdsgdsg",
+      "token": "321324562532532"
+    }
+    
+
+    
   ]
 }
