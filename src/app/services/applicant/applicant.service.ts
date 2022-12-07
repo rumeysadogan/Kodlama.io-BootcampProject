@@ -3,6 +3,8 @@ import { IGetApplicantResponseModel } from './../../models/response/applicant/ge
 import { IGetAllApplicantResponseModel } from './../../models/response/applicant/getAllApplicant-response';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { IUpdateApplicantRequestModel } from 'src/app/models/request/applicant/update-applicant-request';
+import { ThisReceiver } from '@angular/compiler';
 
 @Injectable({
   providedIn: 'root'
@@ -36,6 +38,10 @@ export class ApplicantService {
   applicantDelete(data):Observable<IGetAllApplicantResponseModel>{
     return this.httpClient.delete<IGetAllApplicantResponseModel>(this.apiurl+'/' +data.id);
 
+  }
+
+  updateState(id,statevalue):Observable<IUpdateApplicantRequestModel>{
+    return this.httpClient.patch<IUpdateApplicantRequestModel>(this.apiurl+'/'+id,{state:statevalue})
   }
 
 }
