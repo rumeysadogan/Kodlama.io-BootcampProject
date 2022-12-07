@@ -6,4 +6,5 @@ export interface IGetBootcampResponseModel {
         dateStart: string;
         dateEnd: string;
         state: number;
+        image:string;
       }

@@ -37,6 +37,9 @@ import { FooterComponent } from './components/layouts/footer/footer.component';
 import { PanelComponent } from './components/layouts/panel/panel.component';
 import { SidebarComponent } from './components/layouts/sidebar/sidebar.component';
 import { SidebarRightComponent } from './components/layouts/sidebar-right/sidebar-right.component';
+import { LoginInstructorComponent } from './components/login-instructor/login-instructor.component';
+import { LoginApplicantComponent } from './components/login-applicant/login-applicant.component';
+import { AdminComponent } from './components/admin/admin.component';
 
 @NgModule({
   declarations: [
@@ -73,6 +76,9 @@ import { SidebarRightComponent } from './components/layouts/sidebar-right/sideba
     PanelComponent,
     SidebarComponent,
     SidebarRightComponent,
+    LoginInstructorComponent,
+    LoginApplicantComponent,
+    AdminComponent,
   ],
   imports: [
     BrowserModule,
