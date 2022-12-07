@@ -41,9 +41,11 @@ export class LoginComponent implements OnInit {
           localStorage.setItem('token',this.tokenModel.token)
           // this.router.navigate(["products"])
           // this.toastr.success('Kayıt başarılı')
-          this.router.navigate(['applicants'])
+          this.router.navigate(['admin'])
+          console.log("girdi")
         }
         else{
+          console.log("piremedi")
           // this.toastr.error('Kayıt başarısız.')
         }
       })

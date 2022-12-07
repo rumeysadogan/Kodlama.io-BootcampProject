@@ -12,7 +12,6 @@
       "image": "https://cdn-icons-png.flaticon.com/512/219/219969.png",
       "role": "roleApplicant",
       "state": 1
-
     },
     {
       "id": 2,
@@ -61,75 +60,69 @@
       "nationalIdentity": 12345678987,
       "dateOfBirth": "10/10/1997",
       "about": "aklsdasklkandlkas dlksuflkdfsfsdjfks nkmvhfskjdhf vdsbh",
-      "id": 5,
-      "image": "https://cdn-icons-png.flaticon.com/512/219/219989.png",
-      "role": "roleApplicant",
-      "state": 0
+      "id": 5
     }
   ],
-  "instructor": 
-  [
-      {
-        "id": 1,
-        "firstName": "Engin",
-        "lastName": "DEMİROĞ",
-        "email": "engin@gmail.com",
-        "password": "12345",
-        "companyName": "Kodlama.io",
-        "nationalIdentity": 12345678914,
-        "dateOfBirth": "01/01/1980",
-        "image":"https://pbs.twimg.com/profile_images/1404479261566713856/_MklDkhx_400x400.jpg",
-        "title":"Yazılım Geliştirme Danışmanı ve Eğitmeni",
-        "instagram":"https://www.instagram.com/engindemirog/",
-        "twitter":"https://twitter.com/engindemirog",
-        "github":"https://github.com/engindemirog",
-        "role": "roleInstructor"
-      },
-      {
-        "id": 2,
-        "firstName": "Mustafa Murat",
-        "lastName": "COŞKUN",
-        "email": "murat@gmail.com",
-        "password": "12345",
-        "companyName": "murat.com",
-        "nationalIdentity": 12345678814,
-        "dateOfBirth": "01/01/1985",
-        "image":"https://avatars.githubusercontent.com/u/15064847?v=4",
-        "title":"Yazılım Geliştirici",
-        "instagram":"https://www.instagram.com/mustafamuratcoskunn/",
-        "twitter":"https://twitter.com/mustafam_coskun",
-        "github":"https://github.com/mustafamuratcoskun",
-        "role": "roleInstructor"
-      },
-      {
-        "id": 3,
-        "firstName": "Erdoğan",
-        "lastName": "ÖZTÜRK",
-        "email": "erdogan@gmail.com",
-        "password": "12345",
-        "companyName": "erdogan.com",
-        "nationalIdentity": 12345658914,
-        "dateOfBirth": "01/01/1980",
-        "image":"https://pbs.twimg.com/profile_images/809026982172360704/aQGdnZzH_400x400.jpg",
-        "title":"Yazılım Mimarı",
-        "instagram":"https://www.instagram.com/dijital_dervis/",
-        "twitter":"https://twitter.com/erdoganblog",
-        "github":"https://github.com/dijitaldervis",
-        "role": "roleInstructor"
-      }
-    ],
-
-  "employee": [
+  "instructor": [
     {
       "id": 1,
+      "firstName": "Engin",
+      "lastName": "DEMİROĞ",
+      "email": "engin@gmail.com",
+      "password": "12345",
+      "companyName": "Kodlama.io",
+      "nationalIdentity": 12345678914,
+      "dateOfBirth": "01/01/1980",
+      "image": "https://pbs.twimg.com/profile_images/1404479261566713856/_MklDkhx_400x400.jpg",
+      "title": "Yazılım Geliştirme Danışmanı ve Eğitmeni",
+      "instagram": "https://www.instagram.com/engindemirog/",
+      "twitter": "https://twitter.com/engindemirog",
+      "github": "https://github.com/engindemirog",
+      "role": "roleInstructor"
+    },
+    {
+      "id": 2,
+      "firstName": "Mustafa Murat",
+      "lastName": "COŞKUN",
+      "email": "murat@gmail.com",
+      "password": "12345",
+      "companyName": "murat.com",
+      "nationalIdentity": 12345678814,
+      "dateOfBirth": "01/01/1985",
+      "image": "https://avatars.githubusercontent.com/u/15064847?v=4",
+      "title": "Yazılım Geliştirici",
+      "instagram": "https://www.instagram.com/mustafamuratcoskunn/",
+      "twitter": "https://twitter.com/mustafam_coskun",
+      "github": "https://github.com/mustafamuratcoskun",
+      "role": "roleInstructor"
+    },
+    {
+      "id": 3,
+      "firstName": "Erdoğan",
+      "lastName": "ÖZTÜRK",
+      "email": "erdogan@gmail.com",
+      "password": "12345",
+      "companyName": "erdogan.com",
+      "nationalIdentity": 12345658914,
+      "dateOfBirth": "01/01/1980",
+      "image": "https://pbs.twimg.com/profile_images/809026982172360704/aQGdnZzH_400x400.jpg",
+      "title": "Yazılım Mimarı",
+      "instagram": "https://www.instagram.com/dijital_dervis/",
+      "twitter": "https://twitter.com/erdoganblog",
+      "github": "https://github.com/dijitaldervis",
+      "role": "roleInstructor"
+    }
+  ],
+  "employee": [
+    {
       "firstName": "Esra",
       "lastName": "Yılmaz",
       "email": "esra@gmail.com",
-      "password": "12345",
+      "password": "123456",
       "nationalIdentity": 12345678919,
       "dateOfBirth": "01/01/1990",
       "position": "memur",
-      "role": "roleAdmin"
+      "id": 1
     }
   ],
   "bootcamp": [
@@ -193,14 +186,12 @@
       "image": "https://i.pinimg.com/originals/df/16/7e/df167ee93f90bda5894c985140ea570b.jpg",
       "instructorName": "Erdoğan ÖZTÜRK"
     }
-
   ],
-
   "blacklist": [
     {
       "id": 1,
       "applicantId": 5,
-      "applicantName":"Ahmet Karagöz",
+      "applicantName": "Ahmet Karagöz",
       "date": "30/11/2022",
       "reason": "bencil adam"
     }
@@ -209,7 +200,7 @@
     {
       "id": 1,
       "applicantId": 1,
-      "applicantName":"Selen Ece Özbay",
+      "applicantName": "Selen Ece Özbay",
       "bootcampId": 1,
       "bootcampName": "Frontend",
       "state": 1
@@ -244,18 +235,18 @@
       "expiration": "dsgdsgdsg",
       "token": "325346784532"
     },
-    { 
+    {
       "id": 3,
       "firstName": "Rümeysa",
       "lastName": "Doğan",
       "email": "rumeysa@hotmail.com",
-      "password": "123456", 
+      "password": "123456",
       "role": "roleApplicant",
       "state": 1,
       "expiration": "dsgdsgdsg",
       "token": "3253255676532532"
     },
-    {  
+    {
       "id": 4,
       "firstName": "Hediye",
       "lastName": "Yıldırım",
@@ -306,8 +297,5 @@
       "expiration": "dsgdsgdsg",
       "token": "321324562532532"
     }
-    
-
-    
   ]
 }
