@@ -42,6 +42,7 @@ const routes: Routes = [
     {path: 'admin-blacklist', component: GetAllBlacklistComponent},
     {path: 'admin-bootcamp', component: GetAllBootcampComponent},
     {path: 'admin-employee', component: GetAllEmployeeComponent},
+
     //Main Child Finish
 
 
