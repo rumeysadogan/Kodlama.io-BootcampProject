@@ -61,7 +61,8 @@ export class CreateBlacklistComponent implements OnInit {
       });
       
     this.updateState(); 
-    } else {
+    } 
+    else {
       alert('Hatalı Kayıt');
     }
   }
