@@ -61,6 +61,67 @@
       "dateOfBirth": "10/10/1997",
       "about": "aklsdasklkandlkas dlksuflkdfsfsdjfks nkmvhfskjdhf vdsbh",
       "id": 5
+    },
+    {
+      "firstName": "Kenan",
+      "lastName": "Yıldız",
+      "email": "kenan@gmail.com",
+      "password": "12345",
+      "nationalIdentity": 89761554235,
+      "dateOfBirth": "12/03/1888",
+      "about": "Yaşlı adam",
+      "id": 6
+    },
+    {
+      "firstName": "Kemal",
+      "lastName": "Soysal",
+      "email": "kemal@gmail.com",
+      "password": "12345",
+      "nationalIdentity": 14786990873,
+      "dateOfBirth": "30/07/1990",
+      "about": "Zengin adam",
+      "id": 7
+    },
+    {
+      "firstName": "Burak",
+      "lastName": "Okyay",
+      "email": "burak@gmail.com",
+      "password": "12345",
+      "nationalIdentity": 89067114563,
+      "dateOfBirth": "17/09/1999",
+      "about": "Teknoloji şirketi sahibi",
+      "id": 8
+    },
+    {
+      "firstName": "Elif ",
+      "lastName": "Erdoğan",
+      "email": "elif@gmail.com",
+      "password": "12345",
+      "nationalIdentity": 15678334679,
+      "dateOfBirth": "15/02/1998",
+      "about": "Fedakar Elif",
+      "id": 9
+    },
+    {
+      "firstName": "Yeşim",
+      "lastName": "Yıldırım",
+      "email": "yesim@gmail.com",
+      "password": "12345",
+      "nationalIdentity": 14790665742,
+      "dateOfBirth": "21/06/2002",
+      "about": "Programlama Eğitmeni",
+      "id": 10
+    },
+    {
+      "firstName": "Mehmet",
+      "lastName": "Subay",
+      "email": "mehmet@gmail.com",
+      "password": "123465",
+      "nationalIdentity": 67589554903,
+      "dateOfBirth": "16/11/2006",
+      "about": "Hacettepe üniversitesi mezunu",
+      "role": "roleApplicant",
+      "id": 11
     }
   ],
   "instructor": [
@@ -296,6 +357,37 @@
       "role": "roleAdmin",
       "expiration": "dsgdsgdsg",
       "token": "321324562532532"
+    },
+    {
+      "firstName": "Elif ",
+      "lastName": "Erdoğan",
+      "email": "elif@gmail.com",
+      "password": "12345",
+      "nationalIdentity": 15678334679,
+      "dateOfBirth": "15/02/1998",
+      "about": "Fedakar Elif",
+      "id": 9
+    },
+    {
+      "firstName": "Yeşim",
+      "lastName": "Yıldırım",
+      "email": "yesim@gmail.com",
+      "password": "12345",
+      "nationalIdentity": 14790665742,
+      "dateOfBirth": "21/06/2002",
+      "about": "Programlama Eğitmeni",
+      "id": 10
+    },
+    {
+      "firstName": "Mehmet",
+      "lastName": "Subay",
+      "email": "mehmet@gmail.com",
+      "password": "123465",
+      "nationalIdentity": 67589554903,
+      "dateOfBirth": "16/11/2006",
+      "about": "Hacettepe üniversitesi mezunu",
+      "role": "roleApplicant",
+      "id": 11
     }
   ]
 }

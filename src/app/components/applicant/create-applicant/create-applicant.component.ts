@@ -39,9 +39,9 @@ export class CreateApplicantComponent implements OnInit {
       let applicant=Object.assign({},this.createApplicantForm.value)
       this.applicantService.addApplicant(applicant).subscribe(data=>{
         console.log(data)
-      })
+      }) &&
       this.userService.addApplicant(applicant).subscribe(data=>{
-        applicant.role="roleApplicant";
+        console.log(data)
       })
     }
   }
