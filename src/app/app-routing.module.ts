@@ -48,7 +48,7 @@ const routes: Routes = [
   { path: 'applications', component: GetAllApplicationComponent },
   { path: 'update-application/:id', component: UpdateApplicationComponent },
   //blacklist
-  { path: 'create-blacklist', component: CreateBlacklistComponent },
+  { path: 'create-blacklist/:id', component: CreateBlacklistComponent },
   { path: 'blacklist/:id', component: GetBlacklistComponent },
   { path: 'blacklists', component: GetAllBlacklistComponent },
   { path: 'update-blacklist/:id', component: UpdateBlacklistComponent },
