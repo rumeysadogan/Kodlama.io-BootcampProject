@@ -23,10 +23,10 @@
               "src/styles.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "./src/assets/css/corporate-ui-dashboard.css",
-
+              "node_modules/ngx-toastr/toastr.css",
               "./src/assets/css/corporate-ui-dashboard.min.css",
               "./src/assets/css/nucleo-icons.css",
-              "./src/assets/css/nucleo-svg.css"         
+              "./src/assets/css/nucleo-svg.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
@@ -35,7 +35,6 @@
               "./src/assets/js/corporate-ui-dashboard.js",
               "./src/assets/js/corporate-ui-dashboard.min.js",
               "./src/assets/js/core/bootstrap.bundle.min.js"
-              
             ]
           },
           "configurations": {

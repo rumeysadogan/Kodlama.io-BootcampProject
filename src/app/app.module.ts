@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CreateApplicantComponent } from './components/applicant/create-applicant/create-applicant.component';
@@ -38,6 +37,9 @@ import { PanelComponent } from './components/layouts/panel/panel.component';
 import { SidebarComponent } from './components/layouts/sidebar/sidebar.component';
 import { SidebarRightComponent } from './components/layouts/sidebar-right/sidebar-right.component';
 import { AdminComponent } from './components/admin/admin.component';
+import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
+
 
 @NgModule({
   declarations: [
@@ -82,6 +84,8 @@ import { AdminComponent } from './components/admin/admin.component';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent],
