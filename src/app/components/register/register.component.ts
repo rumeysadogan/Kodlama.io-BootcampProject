@@ -1,3 +1,4 @@
+import { UserService } from './../../services/user.service';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ICreateApplicantRequestModel } from 'src/app/models/request/applicant/create-applicant-request';
@@ -13,7 +14,7 @@ export class RegisterComponent implements OnInit {
   createApplicantForm:FormGroup;
   createApplicantModel:ICreateApplicantRequestModel[]=[];
   constructor(private applicantService:ApplicantService,
-    private formBuilder:FormBuilder) { }
+    private formBuilder:FormBuilder,private userService:UserService) { }
 
   ngOnInit(): void {
     this.createCreateApplicantForm();
@@ -29,6 +30,7 @@ export class RegisterComponent implements OnInit {
       nationalIdentity:['',Validators.required],
       dateOfBirth:['',Validators.required],
       about:['',Validators.required],
+      role:['roleApplicant',Validators.required]
     });
   }
 
@@ -37,6 +39,9 @@ export class RegisterComponent implements OnInit {
       
       let applicant=Object.assign({},this.createApplicantForm.value)
       this.applicantService.addApplicant(applicant).subscribe(data=>{
+        console.log(data)
+      })
+      this.userService.addApplicant(applicant).subscribe(data=>{
         console.log(data)
       })
     }}

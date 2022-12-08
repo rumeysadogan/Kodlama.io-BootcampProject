@@ -4,6 +4,8 @@ import { ITokenModel } from './../../models/token-model';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from 'src/app/services/auth.service';
+import { ToastrService } from 'ngx-toastr';
+
 
 @Component({
   selector: 'app-login',
@@ -17,12 +19,12 @@ export class LoginComponent implements OnInit {
   constructor(
     private authService: AuthService,
     private formBuilder: FormBuilder,
-    private router: Router
+    private router: Router,
+    private toastrService: ToastrService
   ) {}
 
   ngOnInit(): void {
     this.createEmployeeLoginForm();
-    // this.login();
   }
 
   createEmployeeLoginForm() {
@@ -61,9 +63,9 @@ export class LoginComponent implements OnInit {
             : this.router.navigate(['applicants']);
           localStorage.setItem('token', data[0].token);
           localStorage.setItem('role', data[0].role);
-          // this.toastrService.success("Giriş Başarılı")
+          this.toastrService.success("Giriş Başarılı")
         } else {
-          // this.toastrService.error("Giriş Başarısız")
+          this.toastrService.error("Giriş Başarısız")
         }
       });
     }

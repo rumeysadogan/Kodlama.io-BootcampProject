@@ -1,3 +1,4 @@
+import { IDeleteBlacklistRequestModel } from './../../models/request/blacklist/delete-blacklist-request';
 import { IGetAllBlacklistResponseModel } from './../../models/response/blacklist/getAllBlacklist-response';
 import { IGetBlacklistResponseModel } from './../../models/response/blacklist/getBlacklist-response';
 import { Observable } from 'rxjs';
@@ -27,4 +28,14 @@ export class BlacklistService {
   updateBlacklist(id: number, blacklist: IUpdateBlackListRequestModel) {
     return this.httpClient.put(this.apiUrl + '/' + id, blacklist);
   }
+
+  removeApplicant(id: number) {
+    return this.httpClient.delete<IDeleteBlacklistRequestModel>(
+      this.apiUrl + '/' + id
+    );
+  }
+
+  
+
+ 
 }
