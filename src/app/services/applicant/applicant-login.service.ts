@@ -1,7 +1,7 @@
 import { ITokenModel } from './../../models/token-model';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { IApplicantLoginModel } from 'src/app/models/login-model/applicant-login-model';
+import { ILoginModel } from 'src/app/models/login-model/loginModel';
 
 @Injectable({
   providedIn: 'root'
@@ -11,7 +11,7 @@ export class ApplicantLoginService {
   apiurl: string = 'http://localhost:3000/applicant';
   constructor(private httpClient:HttpClient) { }
 
-  applicantLogin(user:IApplicantLoginModel){
+  applicantLogin(user:ILoginModel){
     return this.httpClient.get<ITokenModel[]>(this.apiurl+'?email=' +user.email +'&password=' +user.password)
 
   }

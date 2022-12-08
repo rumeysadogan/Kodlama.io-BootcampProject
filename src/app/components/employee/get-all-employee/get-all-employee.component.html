@@ -38,7 +38,7 @@
                 <td>{{employee.position}}</td>
                 <td><button routerLink="/employee/{{employee.id}}">Detay</button></td>
                 <td><button routerLink="/update-employee/{{employee.id}}">Güncelle</button></td>
-                <td><button routerLink="/delete-employee/{{employee.id}}">Sil</button></td>
+                <td><button (click)="deleteEmployee(employee.id)">Sil</button></td>
                 <!-- <td><button>Sil</button></td> -->
 
     </tr>
