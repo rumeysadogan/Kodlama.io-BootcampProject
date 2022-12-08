@@ -138,6 +138,7 @@ const routes: Routes = [
   { path: 'homepage', component: HomepageComponent },
   { path: '', component: HomepageComponent },
   { path: 'instructors', component: GetAllInstructorComponent },
+  {path: 'applicants', component: GetAllApplicantComponent}
 ];
 
 @NgModule({

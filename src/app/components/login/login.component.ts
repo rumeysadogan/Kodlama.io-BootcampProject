@@ -58,7 +58,7 @@ export class LoginComponent implements OnInit {
             ? this.router.navigate(['instructors'])
             : data[0].role == 'roleAdmin'
             ? this.router.navigate(['admin'])
-            : this.router.navigate(['applicant']);
+            : this.router.navigate(['applicants']);
           localStorage.setItem('token', data[0].token);
           localStorage.setItem('role', data[0].role);
           // this.toastrService.success("Giriş Başarılı")
