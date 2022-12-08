@@ -1,3 +1,4 @@
+import { EmployeeGuard } from './guards/employee.guard';
 import { AdminComponent } from './components/admin/admin.component';
 import { HomepageComponent } from './components/homepage/homepage.component';
 import { LoginApplicantComponent } from './components/login-applicant/login-applicant.component';
@@ -32,36 +33,64 @@ import { CreateEmployeeComponent } from './components/employee/create-employee/c
 import { UpdateEmployeeComponent } from './components/employee/update-employee/update-employee.component';
 
 const routes: Routes = [
-  //instructor
-  { path: 'create-intructor', component: CreateInstructorComponent },
-  { path: 'instructor/:id', component: GetInstructorComponent },
-  { path: 'instructors', component: GetAllInstructorComponent },
-  { path: 'update-instructor/:id', component: UpdateInstructorComponent },
-  //applicant
-  { path: 'create-applicant', component: CreateApplicantComponent },
-  { path: 'applicant/:id', component: GetApplicantComponent },
-  { path: 'applicants', component: GetAllApplicantComponent },
-  { path: 'update-applicant/:id', component: UpdateApplicantComponent },
-  //application
-  { path: 'create-application', component: CreateApplicationComponent },
-  { path: 'application/:id', component: GetApplicationComponent },
-  { path: 'applications', component: GetAllApplicationComponent },
-  { path: 'update-application/:id', component: UpdateApplicationComponent },
-  //blacklist
-  { path: 'create-blacklist/:id', component: CreateBlacklistComponent },
-  { path: 'blacklist/:id', component: GetBlacklistComponent },
-  { path: 'blacklists', component: GetAllBlacklistComponent },
-  { path: 'update-blacklist/:id', component: UpdateBlacklistComponent },
-  //Bootcamp
-  { path: 'create-bootcamp', component: CreateBootcampComponent },
-  { path: 'bootcamp/:id', component: GetBootcampComponent },
-  { path: 'bootcamps', component: GetAllBootcampComponent },
-  { path: 'update-bootcamp/:id', component: UpdateBootcampComponent },
+  //admin start
+  {path: 'admin' , component: AdminComponent, canActivate: [EmployeeGuard],
+  children: [
+    {path: 'admin-instructor', component: GetAllInstructorComponent},
+    {path: 'admin-aplicant', component: GetAllApplicantComponent},
+    {path: 'admin-application', component:GetAllApplicationComponent},
+    {path: 'admin-blacklist', component: GetAllBlacklistComponent},
+    {path: 'admin-bootcamp', component: GetAllBootcampComponent},
+    {path: 'admin-employee', component: GetAllEmployeeComponent},
+
+    //Main Child Finish
+
+
+    //Child of admin instructor
+    {path: 'admin-instructor/create-intructor', component: CreateInstructorComponent},
+    {path: 'admin-instructor/instructor/:id', component:GetInstructorComponent},
+    {path: 'admin-instructor/update-instructor/:id', component: UpdateInstructorComponent},
+    //End of admin instructor
+    
+    //Child of admin applicant
+    {path: 'admin-applicant/create-applicant', component: CreateApplicantComponent},
+    {path: 'admin-applicant/update-applicant/:id', component: UpdateApplicantComponent},
+    {path: 'admin-applicant/applicant/:id', component: GetApplicantComponent},
+    //End of admin applicant 
+
+    //Child of admin application
+    {path: 'admin-application/create-application', component: CreateApplicationComponent},
+    {path: 'admin-application/application/:id', component: GetApplicationComponent},
+    {path: 'admin-application/update-application/:id', component: UpdateApplicationComponent},
+    //End of admin application 
+
+    //Child of admin blacklist
+    {path: 'admin-blacklist/create-blacklist', component: CreateBlacklistComponent},
+    {path: 'admin-blacklist/blacklist/:id', component: GetBlacklistComponent},
+    {path: 'admin-blacklist/update-blacklist/:id', component: UpdateBlacklistComponent},
+    //End of admin blacklist
+
+    //Child of admin bootcamp
+    {path: 'admin-bootcamp/create-bootcamp', component: CreateBootcampComponent },
+    {path: 'admin-bootcamp/bootcamp/:id', component: GetBootcampComponent },
+    {path: 'admin-bootcamp/update-bootcamp/:id', component: UpdateBootcampComponent},
+    //End of admin bootcamp
+
+    //Child of admin employee
+    {path: 'admin-employee/create-employee', component: CreateEmployeeComponent},
+    {path: 'admin-employee/employee/:id', component: GetEmployeeComponent },
+    {path: 'admin-employee/update-employee/:id', component: UpdateEmployeeComponent },
+
+
+  ]
+  },
+
+
+
+  
+  
+
   // Employee
-  { path: 'create-employee', component: CreateEmployeeComponent },
-  { path: 'employee/:id', component: GetEmployeeComponent },
-  { path: 'employees', component: GetAllEmployeeComponent },
-  { path: 'update-employee/:id', component: UpdateEmployeeComponent },
 
   { path: 'employeelogin', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
@@ -69,7 +98,6 @@ const routes: Routes = [
   { path: 'applicantlogin', component: LoginApplicantComponent },
   { path: 'homepage', component: HomepageComponent },
   { path: '', component: HomepageComponent },
-  { path: 'admin', component: AdminComponent },
 ];
 
 @NgModule({
