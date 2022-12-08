@@ -1,17 +1,32 @@
+import { ILoginModel } from './../models/login-model/loginModel';
+import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class AuthService {
+  apiUrl: string = 'http://localhost:3000/users';
+  constructor(private router: Router, private httpClient: HttpClient) {}
 
-  constructor(private router:Router) { }
+  login(user: ILoginModel) {
+    console.log(user);
+    return this.httpClient.get<ILoginModel[]>(
+      this.apiUrl + '?email=' + user.email + '&password=' + user.password
+    );
+  }
+  isAuthenticated() {
+    if (localStorage.getItem('token')) {
+      return true;
+    } else {
+      return false;
+    }
+  }
 
-
-  logout(){
-    localStorage.clear()
-    alert("Çıkış Yapıldı")
-    this.router.navigate([""])
+  logout() {
+    localStorage.clear();
+    alert('Çıkış Yapıldı');
+    this.router.navigate(['']);
   }
 }
