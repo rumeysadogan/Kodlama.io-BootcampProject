@@ -13,6 +13,7 @@ export class EmployeeGuard implements CanActivate {
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
     let isAuthenticated=this.employeelooginservice.isAuthenticated();
       if(isAuthenticated==true){
+        console.log("token geldi")
         return true;
         }
       else{

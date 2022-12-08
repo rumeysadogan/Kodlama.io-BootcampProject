@@ -20,7 +20,7 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
     this.createEmployeeLoginForm();
-    this.login();
+    // this.login();
 
   }
 
@@ -34,6 +34,7 @@ export class LoginComponent implements OnInit {
 
   login(){
     if(this.employeeLoginForm.valid){
+
       let loginModel:IEmployeeLoginModel=this.employeeLoginForm.value;
       this.employeeloginService.employeeLogin(loginModel).subscribe((data)=>{
         if(data.length>0){
@@ -42,10 +43,8 @@ export class LoginComponent implements OnInit {
           // this.router.navigate(["products"])
           // this.toastr.success('Kayıt başarılı')
           this.router.navigate(['admin'])
-          console.log("girdi")
         }
         else{
-          console.log("piremedi")
           // this.toastr.error('Kayıt başarısız.')
         }
       })

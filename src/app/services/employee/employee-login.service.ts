@@ -8,11 +8,12 @@ import { Injectable } from '@angular/core';
 })
 export class EmployeeLoginService {
 
-  apiurl:string="http://localhost:3000/employee"
+  apiurl:string="http://localhost:3000/users"
   constructor(private httpClient:HttpClient) { }
 
   employeeLogin(user:IEmployeeLoginModel){
-    return this.httpClient.get<ITokenModel[]>(this.apiurl+'?email=' +user.email +'&password=' +user.password)
+ console.log(user)
+    return this.httpClient.get<IEmployeeLoginModel[]>(this.apiurl+'?email=' +user.email +'&password=' +user.password)
 
   }
 
