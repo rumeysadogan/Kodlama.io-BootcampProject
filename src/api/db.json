@@ -63,16 +63,6 @@
       "id": 5
     },
     {
-      "firstName": "Kenan",
-      "lastName": "Yıldız",
-      "email": "kenan@gmail.com",
-      "password": "12345",
-      "nationalIdentity": 89761554235,
-      "dateOfBirth": "12/03/1888",
-      "about": "Yaşlı adam",
-      "id": 6
-    },
-    {
       "firstName": "Kemal",
       "lastName": "Soysal",
       "email": "kemal@gmail.com",
@@ -111,17 +101,6 @@
       "dateOfBirth": "21/06/2002",
       "about": "Programlama Eğitmeni",
       "id": 10
-    },
-    {
-      "firstName": "Mehmet",
-      "lastName": "Subay",
-      "email": "mehmet@gmail.com",
-      "password": "123465",
-      "nationalIdentity": 67589554903,
-      "dateOfBirth": "16/11/2006",
-      "about": "Hacettepe üniversitesi mezunu",
-      "role": "roleApplicant",
-      "id": 11
     }
   ],
   "instructor": [
@@ -329,16 +308,6 @@
       "token": "32532532533456782"
     },
     {
-      "id": 6,
-      "firstName": "Mustafa Murat",
-      "lastName": "COŞKUN",
-      "email": "murat@gmail.com",
-      "password": "12345",
-      "role": "roleInstructor",
-      "expiration": "dsgdsgdsg",
-      "token": "325322345532532"
-    },
-    {
       "id": 7,
       "firstName": "Erdoğan",
       "lastName": "ÖZTÜRK",
@@ -377,17 +346,6 @@
       "dateOfBirth": "21/06/2002",
       "about": "Programlama Eğitmeni",
       "id": 10
-    },
-    {
-      "firstName": "Mehmet",
-      "lastName": "Subay",
-      "email": "mehmet@gmail.com",
-      "password": "123465",
-      "nationalIdentity": 67589554903,
-      "dateOfBirth": "16/11/2006",
-      "about": "Hacettepe üniversitesi mezunu",
-      "role": "roleApplicant",
-      "id": 11
     }
   ]
 }

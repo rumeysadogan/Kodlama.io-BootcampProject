@@ -1,3 +1,4 @@
+import { UserService } from './../../../services/user.service';
 import { ApplicantService } from './../../../services/applicant/applicant.service';
 import { IGetAllApplicantResponseModel } from './../../../models/response/applicant/getAllApplicant-response';
 import { Component, OnInit } from '@angular/core';
@@ -11,7 +12,8 @@ import { TitleStrategy } from '@angular/router';
 export class GetAllApplicantComponent implements OnInit {
 
   applicants:IGetAllApplicantResponseModel[]=[];
-  constructor(private applicantService:ApplicantService) { }
+  constructor(private applicantService:ApplicantService,
+    private userService:UserService) { }
 
   ngOnInit(): void {
     this.getAllApplicant();
@@ -24,6 +26,7 @@ export class GetAllApplicantComponent implements OnInit {
   deleteApplicant(data):void{
     this.applicants=this.applicants.filter((c)=> c !== data);
     this.applicantService.applicantDelete(data).subscribe();
+    this.userService.applicantDelete(data).subscribe();
   }
 
   
