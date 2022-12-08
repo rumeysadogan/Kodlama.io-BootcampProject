@@ -1,3 +1,4 @@
+import { ToastrService } from 'ngx-toastr';
 import { ILoginModel } from './../models/login-model/loginModel';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
@@ -8,7 +9,11 @@ import { Injectable } from '@angular/core';
 })
 export class AuthService {
   apiUrl: string = 'http://localhost:3000/users';
-  constructor(private router: Router, private httpClient: HttpClient) {}
+  constructor(
+    private router: Router,
+    private httpClient: HttpClient,
+    private toastrService: ToastrService
+  ) {}
 
   login(user: ILoginModel) {
     console.log(user);
@@ -26,7 +31,7 @@ export class AuthService {
 
   logout() {
     localStorage.clear();
-    alert('Çıkış Yapıldı');
+    this.toastrService.info('Çıkış yapıldı');
     this.router.navigate(['']);
   }
 }
