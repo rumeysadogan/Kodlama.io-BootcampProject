@@ -39,6 +39,13 @@ import { SidebarRightComponent } from './components/layouts/sidebar-right/sideba
 import { AdminComponent } from './components/admin/admin.component';
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
+import { ApplicantlistComponent } from './components/applicantpage/applicantlist/applicantlist.component';
+import { ApplicantupdateComponent } from './components/applicantpage/applicantupdate/applicantupdate.component';
+import { BootcamplistComponent } from './components/applicantpage/bootcamplist/bootcamplist.component';
+import { InstructorlistComponent } from './components/applicantpage/instructorlist/instructorlist.component';
+import { InstructorupdateComponent } from './components/instructorpage/instructorupdate/instructorupdate.component';
+import { BlacklistComponent } from './components/instructorpage/blacklist/blacklist.component';
+import { AddblacklistComponent } from './components/instructorpage/addblacklist/addblacklist.component';
 
 
 @NgModule({
@@ -77,6 +84,13 @@ import { ToastrModule } from 'ngx-toastr';
     SidebarComponent,
     SidebarRightComponent,
     AdminComponent,
+    ApplicantlistComponent,
+    ApplicantupdateComponent,
+    BootcamplistComponent,
+    InstructorlistComponent,
+    InstructorupdateComponent,
+    BlacklistComponent,
+    AddblacklistComponent,
   ],
   imports: [
     BrowserModule,
