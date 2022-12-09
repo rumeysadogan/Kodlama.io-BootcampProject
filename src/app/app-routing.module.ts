@@ -38,7 +38,7 @@ const routes: Routes = [
     canActivate: [LoginguardGuard],
     children: [
       { path: 'admin-instructor', component: GetAllInstructorComponent },
-      { path: 'admin-aplicant', component: GetAllApplicantComponent },
+      { path: 'admin-applicants', component: GetAllApplicantComponent },
       { path: 'admin-application', component: GetAllApplicationComponent },
       { path: 'admin-blacklist', component: GetAllBlacklistComponent },
       { path: 'admin-bootcamp', component: GetAllBootcampComponent },
@@ -138,7 +138,10 @@ const routes: Routes = [
   { path: 'homepage', component: HomepageComponent },
   { path: '', component: HomepageComponent },
   { path: 'instructors', component: GetAllInstructorComponent },
-  {path: 'applicants', component: GetAllApplicantComponent}
+  { path: 'instructors/instructor/:id', component: GetInstructorComponent },
+  {path: 'admin/applicants', component: GetAllApplicantComponent},
+  {path: 'admin/applicant/:id', component: GetApplicantComponent},
+  {path: 'applicants/admin-bootcamp', component: GetAllApplicantComponent},
 ];
 
 @NgModule({

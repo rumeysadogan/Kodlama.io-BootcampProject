@@ -91,16 +91,6 @@
       "dateOfBirth": "15/02/1998",
       "about": "Fedakar Elif",
       "id": 9
-    },
-    {
-      "firstName": "Yeşim",
-      "lastName": "Yıldırım",
-      "email": "yesim@gmail.com",
-      "password": "12345",
-      "nationalIdentity": 14790665742,
-      "dateOfBirth": "21/06/2002",
-      "about": "Programlama Eğitmeni",
-      "id": 10
     }
   ],
   "instructor": [

@@ -18,11 +18,13 @@ export class GetInstructorComponent implements OnInit {
   ngOnInit(): void {
     this.activatedRoute.params.subscribe((params) => {
       this.getInstructor(params['id']);
+      console.log(params['id'])
     });
   }
-  getInstructor(id) {
-    this.instructorService
-      .getInstructor(id)
-      .subscribe((data) => (this.instructors = data));
+  getInstructor(id:number) {
+    this.instructorService.getInstructor(id).subscribe((data) => {
+      this.instructors = data;
+      console.log(data)
+    });
   }
 }
