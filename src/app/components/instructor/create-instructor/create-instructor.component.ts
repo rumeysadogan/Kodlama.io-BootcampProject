@@ -1,3 +1,4 @@
+import { UserService } from './../../../services/user.service';
 import { InstructorService } from './../../../services/instructor/instructor.service';
 import { Component, OnInit } from '@angular/core';
 import {
@@ -18,7 +19,8 @@ export class CreateInstructorComponent implements OnInit {
   constructor(
     private formBuilder: FormBuilder,
     private activatedRoute: ActivatedRoute,
-    private instructorService: InstructorService
+    private instructorService: InstructorService,
+    private userService:UserService
   ) {}
 
   ngOnInit(): void {
@@ -44,6 +46,7 @@ export class CreateInstructorComponent implements OnInit {
         // Validators.minLength(11),
         // Validators.maxLength(11),
       ],
+      role:['roleInstructor',Validators.required]
     });
   }
   add() {
@@ -54,6 +57,7 @@ export class CreateInstructorComponent implements OnInit {
         .subscribe((data) => {
           alert('Kayıt Başarılı');
         });
+      this.userService.addInstructor(InstructorModel).subscribe();
     } else {
       alert('Hatalı kayıt');
     }

@@ -1,3 +1,4 @@
+import { UserService } from './../../../services/user.service';
 import { EmployeeService } from './../../../services/employee/employee.service';
 import { ActivatedRoute } from '@angular/router';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
@@ -14,7 +15,8 @@ export class CreateEmployeeComponent implements OnInit {
   constructor(
     private formBuilder: FormBuilder,
     private activatedRoute: ActivatedRoute,
-    private employeeService: EmployeeService
+    private employeeService: EmployeeService,
+    private userService:UserService
   ) { }
 
   ngOnInit(): void {
@@ -29,7 +31,8 @@ export class CreateEmployeeComponent implements OnInit {
       password: [ '', Validators.required],
       nationalIdentity: [ '', Validators.required],
       dateOfBirth: [ '', Validators.required],
-      position: [ '', Validators.required]
+      position: [ '', Validators.required],
+      role:['roleEmployee',Validators.required]
     })
   }
   
@@ -39,6 +42,7 @@ export class CreateEmployeeComponent implements OnInit {
       this.employeeService.addEmployee(employee).subscribe(data =>{
         console.log(data)
       })
+      this.userService.addEmployee(employee).subscribe();
     }
   }
 
