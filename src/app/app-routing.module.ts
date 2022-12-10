@@ -1,3 +1,4 @@
+import { InstructorhomeComponent } from './components/instructorhome/instructorhome.component';
 import { InstructorlistInstructorpageComponent } from './components/instructorpage/instructorlist-instructorpage/instructorlist-instructorpage.component';
 
 import { ApplicanthomeComponent } from './components/applicanthome/applicanthome.component';
@@ -196,57 +197,57 @@ const routes: Routes = [
   ],
 },
 
-// {
-//   path: 'instructor',
-//   component: InstructorhomeComponent,
-//   canActivate: [LoginguardGuard],
-//   children: [
-//     { path: 'instructor-instructors', component: InstructorlistInstructorpageComponent },
-//     { path: 'instructor-applicants', component: ApplicantlistComponentInstructor },
-//     // { path: 'admin-application', component: GetAllApplicationComponent },
-//     { path: 'instructor-blacklist', component: BlacklistComponentInstructor },
-//     { path: 'instructor-bootcamps', component: BootcamplistComponentInstructor},
-//     // { path: 'admin-employee', component: GetAllEmployeeComponent },
+{
+  path: 'instructor',
+  component: InstructorhomeComponent,
+  canActivate: [LoginguardGuard],
+  children: [
+    { path: 'instructor-instructors', component: InstructorlistInstructorpageComponent },
+    { path: 'instructor-applicants', component: ApplicantlistComponentInstructor },
+    // { path: 'admin-application', component: GetAllApplicationComponent },
+    { path: 'instructor-blacklist', component: BlacklistComponentInstructor },
+    { path: 'instructor-bootcamps', component: BootcamplistComponentInstructor},
+    // { path: 'admin-employee', component: GetAllEmployeeComponent },
 
-//     //Main Child Finish
+    //Main Child Finish
 
-//     //Child of admin instructor
+    //Child of admin instructor
     
-//     // {
-//     //   path: 'admin-instructor/instructor/:id',
-//     //   component: GetInstructorComponent,
-//     // },
+    // {
+    //   path: 'admin-instructor/instructor/:id',
+    //   component: GetInstructorComponent,
+    // },
     
-//     //Child of admin applicant
+    //Child of admin applicant
   
-//     // {
-//     //   path: 'applicant-applicants/applicant/:id',
-//     //   component: GetApplicantComponent,
-//     // },
-//     //End of admin applicant
+    // {
+    //   path: 'applicant-applicants/applicant/:id',
+    //   component: GetApplicantComponent,
+    // },
+    //End of admin applicant
 
-//     //Child of admin application
-//     // {
-//     //   path: 'admin-application/create-application',
-//     //   component: CreateApplicationComponent,
-//     // },
-//     // {
-//     //   path: 'admin-application/application/:id',
-//     //   component: GetApplicationComponent,
-//     // },
-//     // {
-//     //   path: 'admin-application/update-application/:id',
-//     //   component: UpdateApplicationComponent,
-//     // },
+    //Child of admin application
+    // {
+    //   path: 'admin-application/create-application',
+    //   component: CreateApplicationComponent,
+    // },
+    // {
+    //   path: 'admin-application/application/:id',
+    //   component: GetApplicationComponent,
+    // },
+    // {
+    //   path: 'admin-application/update-application/:id',
+    //   component: UpdateApplicationComponent,
+    // },
    
    
-//     { path: 'instructor-bootcamps/bootcamp/:id', component: GetBootcampComponent },
+    { path: 'instructor-bootcamps/bootcamp/:id', component: GetBootcampComponent },
     
    
     
 
-//   ],
-// },
+  ],
+},
 
 
 
