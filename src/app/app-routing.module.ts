@@ -41,6 +41,7 @@ import { InstructorlistComponentApplicant } from './components/applicantpage/ins
 import { ApplicantlistComponentApplicant } from './components/applicantpage/applicantlist-applicantpage/applicantlist.component';
 import { BootcamplistComponentApplicant } from './components/applicantpage/bootcamplist-applicantpage/bootcamplist.component';
 import { BlacklistComponentInstructor } from './components/instructorpage/blacklist-instructorpage/blacklist.component';
+import { BootcampdetailInstructorpageComponent } from './components/instructorpage/bootcampdetail-instructorpage/bootcampdetail-instructorpage.component';
 
 const routes: Routes = [
   //admin start
@@ -208,7 +209,7 @@ const routes: Routes = [
     // { path: 'admin-application', component: GetAllApplicationComponent },
     { path: 'instructor-blacklist', component: BlacklistComponentInstructor },
     { path: 'instructor-bootcamps', component: BootcamplistComponentInstructor},
-    // { path: 'admin-employee', component: GetAllEmployeeComponent },
+    { path: 'instructor-bootcamps/bootcamp/:id', component: BootcampdetailInstructorpageComponent},
 
     //Main Child Finish
 

@@ -54,6 +54,7 @@ import { BlacklistComponentInstructor } from './components/instructorpage/blackl
 import { InstructorlistInstructorpageComponent } from './components/instructorpage/instructorlist-instructorpage/instructorlist-instructorpage.component';
 import { InstructorhomeComponent } from './components/instructorhome/instructorhome.component';
 import { BootcampdetailApplicantpageComponent } from './components/applicantpage/bootcampdetail-applicantpage/bootcampdetail-applicantpage.component';
+import { BootcampdetailInstructorpageComponent } from './components/instructorpage/bootcampdetail-instructorpage/bootcampdetail-instructorpage.component';
 
 
 
@@ -107,6 +108,7 @@ import { BootcampdetailApplicantpageComponent } from './components/applicantpage
     InstructorlistInstructorpageComponent,
     InstructorhomeComponent,
     BootcampdetailApplicantpageComponent,
+    BootcampdetailInstructorpageComponent,
 
   ],
   imports: [
