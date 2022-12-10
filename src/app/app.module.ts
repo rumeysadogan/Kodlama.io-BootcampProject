@@ -44,11 +44,16 @@ import { ApplicantupdateComponentApplicant } from './components/applicantpage/ap
 import { BootcamplistComponentApplicant} from './components/applicantpage/bootcamplist-applicantpage/bootcamplist.component';
 import { InstructorlistComponentApplicant } from './components/applicantpage/instructorlist-applicantpage/instructorlist.component';
 import { InstructorupdateComponent } from './components/instructorpage/instructorupdate-instructorpage/instructorupdate.component';
-import { BlacklistComponent } from './components/instructorpage/blacklist-instructorpage/blacklist.component';
+
 import { AddblacklistComponent } from './components/instructorpage/addblacklist/addblacklist.component';
 import { ApplicanthomeComponent } from './components/applicanthome/applicanthome.component';
 import { ApplicantSidebarComponent } from './components/layouts/sidebar/applicant-sidebar/applicant-sidebar.component';
 import { InstructorSidebarComponent } from './components/layouts/sidebar/instructor-sidebar/instructor-sidebar.component';
+import { BlacklistComponentInstructor } from './components/instructorpage/blacklist-instructorpage/blacklist.component';
+
+import { InstructorlistInstructorpageComponent } from './components/instructorpage/instructorlist-instructorpage/instructorlist-instructorpage.component';
+import { InstructorhomeComponent } from './components/instructorhome/instructorhome.component';
+
 
 
 @NgModule({
@@ -92,11 +97,13 @@ import { InstructorSidebarComponent } from './components/layouts/sidebar/instruc
     BootcamplistComponentApplicant,
     InstructorlistComponentApplicant,
     InstructorupdateComponent,
-    BlacklistComponent,
+    BlacklistComponentInstructor,
     AddblacklistComponent,
     ApplicanthomeComponent,
     ApplicantSidebarComponent,
     InstructorSidebarComponent,
+    InstructorlistInstructorpageComponent,
+    InstructorhomeComponent,
   ],
   imports: [
     BrowserModule,
