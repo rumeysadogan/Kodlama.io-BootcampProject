@@ -47,6 +47,8 @@ import { InstructorupdateComponent } from './components/instructorpage/instructo
 import { BlacklistComponent } from './components/instructorpage/blacklist-instructorpage/blacklist.component';
 import { AddblacklistComponent } from './components/instructorpage/addblacklist/addblacklist.component';
 import { ApplicanthomeComponent } from './components/applicanthome/applicanthome.component';
+import { ApplicantSidebarComponent } from './components/layouts/sidebar/applicant-sidebar/applicant-sidebar.component';
+import { InstructorSidebarComponent } from './components/layouts/sidebar/instructor-sidebar/instructor-sidebar.component';
 
 
 @NgModule({
@@ -93,6 +95,8 @@ import { ApplicanthomeComponent } from './components/applicanthome/applicanthome
     BlacklistComponent,
     AddblacklistComponent,
     ApplicanthomeComponent,
+    ApplicantSidebarComponent,
+    InstructorSidebarComponent,
   ],
   imports: [
     BrowserModule,
