@@ -1,6 +1,6 @@
-import { InstructorService } from './../../../services/instructor/instructor.service';
+import { InstructorService } from '../../../services/instructor/instructor.service';
 import { ActivatedRoute } from '@angular/router';
-import { BootcampService } from './../../../services/bootcamp/bootcamp.service';
+import { BootcampService } from '../../../services/bootcamp/bootcamp.service';
 import { IGetAllBootcampResponseModel } from 'src/app/models/response/bootcamp/getAllBootcamp-response';
 import { Component, OnInit } from '@angular/core';
 
@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './bootcamplist.component.html',
   styleUrls: ['./bootcamplist.component.css']
 })
-export class BootcamplistComponent implements OnInit {
+export class BootcamplistComponentApplicant implements OnInit {
 
   bootcamps: IGetAllBootcampResponseModel[] = [];
   constructor(private bootcampService: BootcampService,

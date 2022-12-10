@@ -1,3 +1,7 @@
+import { ApplicanthomeComponent } from './components/applicanthome/applicanthome.component';
+import { BootcamplistComponent } from './components/instructorpage/bootcamplist-instructorpage/bootcamplist.component';
+import { ApplicantupdateComponentApplicant } from './components/applicantpage/applicantupdate-applicantpage/applicantupdate.component';
+import { ApplicantlistComponent } from './components/instructorpage/applicantlist-instructorpage/applicantlist.component';
 import { AdminComponent } from './components/admin/admin.component';
 import { HomepageComponent } from './components/homepage/homepage.component';
 import { RegisterComponent } from './components/register/register.component';
@@ -29,6 +33,9 @@ import { UpdateBootcampComponent } from './components/bootcamp/update-bootcamp/u
 import { CreateEmployeeComponent } from './components/employee/create-employee/create-employee.component';
 import { UpdateEmployeeComponent } from './components/employee/update-employee/update-employee.component';
 import { LoginguardGuard } from './guards/loginguard.guard';
+import { InstructorlistComponentApplicant } from './components/applicantpage/instructorlist-applicantpage/instructorlist.component';
+import { ApplicantlistComponentApplicant } from './components/applicantpage/applicantlist-applicantpage/applicantlist.component';
+import { BootcamplistComponentApplicant } from './components/applicantpage/bootcamplist-applicantpage/bootcamplist.component';
 
 const routes: Routes = [
   //admin start
@@ -130,18 +137,81 @@ const routes: Routes = [
       },
     ],
   },
+  {
+  path: 'applicant',
+  component: ApplicanthomeComponent,
+  canActivate: [LoginguardGuard],
+  children: [
+    { path: 'applicant-instructors', component: InstructorlistComponentApplicant },
+    { path: 'applicant-applicants', component: ApplicantlistComponentApplicant  },
+    // { path: 'admin-application', component: GetAllApplicationComponent },
+    // { path: 'admin-blacklist', component: GetAllBlacklistComponent },
+    { path: 'applicant-bootcamps', component: BootcamplistComponentApplicant},
+    // { path: 'admin-employee', component: GetAllEmployeeComponent },
 
+    //Main Child Finish
+
+    //Child of admin instructor
+    
+    // {
+    //   path: 'admin-instructor/instructor/:id',
+    //   component: GetInstructorComponent,
+    // },
+    
+    //Child of admin applicant
+    
+    {
+      path: 'applicant-applicants/update-applicant/:id',
+      component: ApplicantupdateComponentApplicant,
+    },
+    // {
+    //   path: 'applicant-applicants/applicant/:id',
+    //   component: GetApplicantComponent,
+    // },
+    //End of admin applicant
+
+    //Child of admin application
+    // {
+    //   path: 'admin-application/create-application',
+    //   component: CreateApplicationComponent,
+    // },
+    // {
+    //   path: 'admin-application/application/:id',
+    //   component: GetApplicationComponent,
+    // },
+    // {
+    //   path: 'admin-application/update-application/:id',
+    //   component: UpdateApplicationComponent,
+    // },
+   
+   
+    { path: 'applicant-bootcamps/bootcamp/:id', component: GetBootcampComponent },
+    
+   
+    
+
+  ],
+},
+
+
+  
+
+  
   // Employee
 
+
+ 
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'homepage', component: HomepageComponent },
   { path: '', component: HomepageComponent },
   { path: 'instructors', component: GetAllInstructorComponent },
   { path: 'instructors/instructor/:id', component: GetInstructorComponent },
-  {path: 'admin/applicants', component: GetAllApplicantComponent},
-  {path: 'admin/applicant/:id', component: GetApplicantComponent},
-  {path: 'applicants/admin-bootcamp', component: GetAllApplicantComponent},
+  { path: 'admin/applicants', component: GetAllApplicantComponent},
+  { path: 'admin/applicant/:id', component: GetApplicantComponent},
+  { path: 'applicants/admin-bootcamp', component: GetAllApplicantComponent},
+ 
+  
 ];
 
 @NgModule({

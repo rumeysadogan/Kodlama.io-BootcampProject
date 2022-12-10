@@ -1,6 +1,6 @@
-import { InstructorService } from './../../../services/instructor/instructor.service';
+import { InstructorService } from '../../../services/instructor/instructor.service';
 import { ActivatedRoute } from '@angular/router';
-import { BootcampService } from './../../../services/bootcamp/bootcamp.service';
+import { BootcampService } from '../../../services/bootcamp/bootcamp.service';
 import { IGetAllBootcampResponseModel } from 'src/app/models/response/bootcamp/getAllBootcamp-response';
 import { Component, OnInit } from '@angular/core';
 
