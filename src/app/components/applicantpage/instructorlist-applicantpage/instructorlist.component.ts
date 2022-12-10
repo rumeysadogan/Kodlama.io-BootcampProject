@@ -1,6 +1,6 @@
 import { ActivatedRoute } from '@angular/router';
-import { InstructorService } from './../../../services/instructor/instructor.service';
-import { IGetAllInstructorResponseModel } from './../../../models/response/instructor/getAllInstructor-response';
+import { InstructorService } from '../../../services/instructor/instructor.service';
+import { IGetAllInstructorResponseModel } from '../../../models/response/instructor/getAllInstructor-response';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './instructorlist.component.html',
   styleUrls: ['./instructorlist.component.css']
 })
-export class InstructorlistComponent implements OnInit {
+export class InstructorlistComponentApplicant implements OnInit {
 
   instructors: IGetAllInstructorResponseModel[] = [];
   constructor(

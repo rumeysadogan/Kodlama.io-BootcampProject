@@ -1,6 +1,6 @@
 import { ActivatedRoute } from '@angular/router';
-import { IGetApplicantResponseModel } from './../../../models/response/applicant/getApplicant-response';
-import { ApplicantService } from './../../../services/applicant/applicant.service';
+import { IGetApplicantResponseModel } from '../../../models/response/applicant/getApplicant-response';
+import { ApplicantService } from '../../../services/applicant/applicant.service';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 
@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './applicantupdate.component.html',
   styleUrls: ['./applicantupdate.component.css']
 })
-export class ApplicantupdateComponent implements OnInit {
+export class ApplicantupdateComponentApplicant implements OnInit {
 
   applicants:IGetApplicantResponseModel;
   applicantUpdateForm:FormGroup;

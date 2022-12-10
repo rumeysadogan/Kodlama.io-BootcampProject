@@ -1,6 +1,6 @@
-import { InstructorService } from './../../../services/instructor/instructor.service';
+import { InstructorService } from '../../../services/instructor/instructor.service';
 import { ActivatedRoute } from '@angular/router';
-import { IGetInstructorResponseModel } from './../../../models/response/instructor/getInstructor-response';
+import { IGetInstructorResponseModel } from '../../../models/response/instructor/getInstructor-response';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 

@@ -1,7 +1,7 @@
-import { ApplicantService } from './../../../services/applicant/applicant.service';
-import { BlacklistService } from './../../../services/blacklist/blacklist.service';
+import { ApplicantService } from '../../../services/applicant/applicant.service';
+import { BlacklistService } from '../../../services/blacklist/blacklist.service';
 import { ActivatedRoute } from '@angular/router';
-import { IGetAllBlacklistResponseModel } from './../../../models/response/blacklist/getAllBlacklist-response';
+import { IGetAllBlacklistResponseModel } from '../../../models/response/blacklist/getAllBlacklist-response';
 import { Component, OnInit, enableProdMode } from '@angular/core';
 
 @Component({

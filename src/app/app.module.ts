@@ -39,13 +39,14 @@ import { SidebarRightComponent } from './components/layouts/sidebar-right/sideba
 import { AdminComponent } from './components/admin/admin.component';
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
-import { ApplicantlistComponent } from './components/applicantpage/applicantlist/applicantlist.component';
-import { ApplicantupdateComponent } from './components/applicantpage/applicantupdate/applicantupdate.component';
-import { BootcamplistComponent } from './components/applicantpage/bootcamplist/bootcamplist.component';
-import { InstructorlistComponent } from './components/applicantpage/instructorlist/instructorlist.component';
-import { InstructorupdateComponent } from './components/instructorpage/instructorupdate/instructorupdate.component';
-import { BlacklistComponent } from './components/instructorpage/blacklist/blacklist.component';
+import { ApplicantlistComponentApplicant } from './components/applicantpage/applicantlist-applicantpage/applicantlist.component';
+import { ApplicantupdateComponentApplicant } from './components/applicantpage/applicantupdate-applicantpage/applicantupdate.component';
+import { BootcamplistComponentApplicant} from './components/applicantpage/bootcamplist-applicantpage/bootcamplist.component';
+import { InstructorlistComponentApplicant } from './components/applicantpage/instructorlist-applicantpage/instructorlist.component';
+import { InstructorupdateComponent } from './components/instructorpage/instructorupdate-instructorpage/instructorupdate.component';
+import { BlacklistComponent } from './components/instructorpage/blacklist-instructorpage/blacklist.component';
 import { AddblacklistComponent } from './components/instructorpage/addblacklist/addblacklist.component';
+import { ApplicanthomeComponent } from './components/applicanthome/applicanthome.component';
 
 
 @NgModule({
@@ -84,13 +85,14 @@ import { AddblacklistComponent } from './components/instructorpage/addblacklist/
     SidebarComponent,
     SidebarRightComponent,
     AdminComponent,
-    ApplicantlistComponent,
-    ApplicantupdateComponent,
-    BootcamplistComponent,
-    InstructorlistComponent,
+    ApplicantlistComponentApplicant,
+    ApplicantupdateComponentApplicant,
+    BootcamplistComponentApplicant,
+    InstructorlistComponentApplicant,
     InstructorupdateComponent,
     BlacklistComponent,
     AddblacklistComponent,
+    ApplicanthomeComponent,
   ],
   imports: [
     BrowserModule,
