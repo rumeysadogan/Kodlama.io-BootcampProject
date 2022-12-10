@@ -9,7 +9,7 @@ import { Component, OnInit, enableProdMode } from '@angular/core';
   templateUrl: './blacklist.component.html',
   styleUrls: ['./blacklist.component.css']
 })
-export class BlacklistComponent implements OnInit {
+export class BlacklistComponentInstructor implements OnInit {
 
   blacklist: IGetAllBlacklistResponseModel[] = [];
   constructor(private blacklistService: BlacklistService,

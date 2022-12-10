@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './bootcamplist.component.html',
   styleUrls: ['./bootcamplist.component.css']
 })
-export class BootcamplistComponent implements OnInit {
+export class BootcamplistComponentInstructor implements OnInit {
 
   bootcamps: IGetAllBootcampResponseModel[] = [];
   constructor(

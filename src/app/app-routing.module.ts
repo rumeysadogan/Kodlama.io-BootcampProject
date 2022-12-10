@@ -1,7 +1,9 @@
+import { InstructorlistInstructorpageComponent } from './components/instructorpage/instructorlist-instructorpage/instructorlist-instructorpage.component';
+
 import { ApplicanthomeComponent } from './components/applicanthome/applicanthome.component';
-import { BootcamplistComponent } from './components/instructorpage/bootcamplist-instructorpage/bootcamplist.component';
+import { BootcamplistComponentInstructor } from './components/instructorpage/bootcamplist-instructorpage/bootcamplist.component';
 import { ApplicantupdateComponentApplicant } from './components/applicantpage/applicantupdate-applicantpage/applicantupdate.component';
-import { ApplicantlistComponent } from './components/instructorpage/applicantlist-instructorpage/applicantlist.component';
+import { ApplicantlistComponentInstructor } from './components/instructorpage/applicantlist-instructorpage/applicantlist.component';
 import { AdminComponent } from './components/admin/admin.component';
 import { HomepageComponent } from './components/homepage/homepage.component';
 import { RegisterComponent } from './components/register/register.component';
@@ -36,6 +38,7 @@ import { LoginguardGuard } from './guards/loginguard.guard';
 import { InstructorlistComponentApplicant } from './components/applicantpage/instructorlist-applicantpage/instructorlist.component';
 import { ApplicantlistComponentApplicant } from './components/applicantpage/applicantlist-applicantpage/applicantlist.component';
 import { BootcamplistComponentApplicant } from './components/applicantpage/bootcamplist-applicantpage/bootcamplist.component';
+import { BlacklistComponentInstructor } from './components/instructorpage/blacklist-instructorpage/blacklist.component';
 
 const routes: Routes = [
   //admin start
@@ -192,6 +195,61 @@ const routes: Routes = [
 
   ],
 },
+
+// {
+//   path: 'instructor',
+//   component: InstructorhomeComponent,
+//   canActivate: [LoginguardGuard],
+//   children: [
+//     { path: 'instructor-instructors', component: InstructorlistInstructorpageComponent },
+//     { path: 'instructor-applicants', component: ApplicantlistComponentInstructor },
+//     // { path: 'admin-application', component: GetAllApplicationComponent },
+//     { path: 'instructor-blacklist', component: BlacklistComponentInstructor },
+//     { path: 'instructor-bootcamps', component: BootcamplistComponentInstructor},
+//     // { path: 'admin-employee', component: GetAllEmployeeComponent },
+
+//     //Main Child Finish
+
+//     //Child of admin instructor
+    
+//     // {
+//     //   path: 'admin-instructor/instructor/:id',
+//     //   component: GetInstructorComponent,
+//     // },
+    
+//     //Child of admin applicant
+  
+//     // {
+//     //   path: 'applicant-applicants/applicant/:id',
+//     //   component: GetApplicantComponent,
+//     // },
+//     //End of admin applicant
+
+//     //Child of admin application
+//     // {
+//     //   path: 'admin-application/create-application',
+//     //   component: CreateApplicationComponent,
+//     // },
+//     // {
+//     //   path: 'admin-application/application/:id',
+//     //   component: GetApplicationComponent,
+//     // },
+//     // {
+//     //   path: 'admin-application/update-application/:id',
+//     //   component: UpdateApplicationComponent,
+//     // },
+   
+   
+//     { path: 'instructor-bootcamps/bootcamp/:id', component: GetBootcampComponent },
+    
+   
+    
+
+//   ],
+// },
+
+
+
 
 
   
