@@ -53,6 +53,8 @@ import { BlacklistComponentInstructor } from './components/instructorpage/blackl
 
 import { InstructorlistInstructorpageComponent } from './components/instructorpage/instructorlist-instructorpage/instructorlist-instructorpage.component';
 import { InstructorhomeComponent } from './components/instructorhome/instructorhome.component';
+import { BootcampdetailApplicantpageComponent } from './components/applicantpage/bootcampdetail-applicantpage/bootcampdetail-applicantpage.component';
+
 
 
 
@@ -104,6 +106,8 @@ import { InstructorhomeComponent } from './components/instructorhome/instructorh
     InstructorSidebarComponent,
     InstructorlistInstructorpageComponent,
     InstructorhomeComponent,
+    BootcampdetailApplicantpageComponent,
+
   ],
   imports: [
     BrowserModule,

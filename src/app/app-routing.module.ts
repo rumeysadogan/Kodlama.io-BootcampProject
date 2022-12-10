@@ -1,3 +1,4 @@
+
 import { InstructorhomeComponent } from './components/instructorhome/instructorhome.component';
 import { InstructorlistInstructorpageComponent } from './components/instructorpage/instructorlist-instructorpage/instructorlist-instructorpage.component';
 
@@ -151,7 +152,7 @@ const routes: Routes = [
     // { path: 'admin-application', component: GetAllApplicationComponent },
     // { path: 'admin-blacklist', component: GetAllBlacklistComponent },
     { path: 'applicant-bootcamps', component: BootcamplistComponentApplicant},
-    // { path: 'admin-employee', component: GetAllEmployeeComponent },
+    // { path: 'applicant-bootcamps/bootcamp/:id', component: BootcampdetailComponentApplicant },
 
     //Main Child Finish
 
@@ -264,11 +265,11 @@ const routes: Routes = [
   { path: 'register', component: RegisterComponent },
   { path: 'homepage', component: HomepageComponent },
   { path: '', component: HomepageComponent },
-  { path: 'instructors', component: GetAllInstructorComponent },
-  { path: 'instructors/instructor/:id', component: GetInstructorComponent },
-  { path: 'admin/applicants', component: GetAllApplicantComponent},
-  { path: 'admin/applicant/:id', component: GetApplicantComponent},
-  { path: 'applicants/admin-bootcamp', component: GetAllApplicantComponent},
+  // { path: 'instructors', component: GetAllInstructorComponent },
+  // { path: 'instructors/instructor/:id', component: GetInstructorComponent },
+  // { path: 'admin/applicants', component: GetAllApplicantComponent},
+  // { path: 'admin/applicant/:id', component: GetApplicantComponent},
+  // { path: 'applicants/admin-bootcamp', component: GetAllApplicantComponent},
  
   
 ];
