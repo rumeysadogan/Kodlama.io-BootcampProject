@@ -1,3 +1,4 @@
+import { ApplicantlistComponentInstructor } from './components/instructorpage/applicantlist-instructorpage/applicantlist.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -57,7 +58,9 @@ import { BootcampdetailApplicantpageComponent } from './components/applicantpage
 import { BootcampdetailInstructorpageComponent } from './components/instructorpage/bootcampdetail-instructorpage/bootcampdetail-instructorpage.component';
 import { InstructordetailApplicantpageComponent } from './components/applicantpage/instructordetail-applicantpage/instructordetail-applicantpage/instructordetail-applicantpage.component';
 import { InstructordetailInstructorpageComponent } from './components/instructorpage/instructordetail-instructorpage/instructordetail-instructorpage/instructordetail-instructorpage.component';
-
+import { ApplicantdetailApplicantpageComponent } from './components/applicantpage/applicantdetail-applicantpage/applicantdetail-applicantpage.component';
+import { ApplicantHeaderComponent } from './components/layouts/applicant-header/applicant-header.component';
+import { BootcamplistComponentInstructor } from './components/instructorpage/bootcamplist-instructorpage/bootcamplist.component';
 
 
 
@@ -113,7 +116,10 @@ import { InstructordetailInstructorpageComponent } from './components/instructor
     BootcampdetailInstructorpageComponent,
     InstructordetailApplicantpageComponent,
     InstructordetailInstructorpageComponent,
-
+    ApplicantdetailApplicantpageComponent,
+    ApplicantHeaderComponent,
+    BootcamplistComponentInstructor,
+    ApplicantlistComponentInstructor
   ],
   imports: [
     BrowserModule,

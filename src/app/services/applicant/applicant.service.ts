@@ -12,24 +12,26 @@ import { ThisReceiver } from '@angular/compiler';
 export class ApplicantService {
 
   apiurl: string = 'http://localhost:3000/applicant';
+  apiUrlUser: string = 'http://localhost:3000/users';
+
 
   constructor(private httpClient:HttpClient) { }
 
   addApplicant(applicant){
     return this.httpClient.post(this.apiurl,applicant)
+  }
 
+  getAllUsers():Observable<IGetAllApplicantResponseModel[]>{
+    return this.httpClient.get<IGetAllApplicantResponseModel[]>(this.apiUrlUser)
   }
 
   getAllApplicant():Observable<IGetAllApplicantResponseModel[]>{
     return this.httpClient.get<IGetAllApplicantResponseModel[]>(this.apiurl+'?state=1')
-
   }
 
   getApplicantById(id): Observable<IGetApplicantResponseModel> {
     return this.httpClient.get<IGetApplicantResponseModel>(this.apiurl + '/' + id);
   }
-
-
   
   updateApplicant(id, applicant) {
     return this.httpClient.put(this.apiurl+ '/' + id, applicant);
