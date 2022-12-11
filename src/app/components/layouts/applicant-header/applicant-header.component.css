@@ -1,0 +1,18 @@
+.user-img{
+    float: right;
+    margin-right: 14px;
+    display: flex;
+}   
+
+.user-img img{
+    height: 38px;
+}
+
+.user-img .name{
+    height: 38px;
+    margin-top: 7px;
+}    
+
+.user-img .name span{
+    color:whitesmoke;
+}
