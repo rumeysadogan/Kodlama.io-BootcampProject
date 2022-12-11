@@ -1,3 +1,5 @@
+import { ApplicantprofileComponent } from './components/applicantpage/applicantprofile/applicantprofile.component';
+
 import { ApplicantdetailApplicantpageComponent } from './components/applicantpage/applicantdetail-applicantpage/applicantdetail-applicantpage.component';
 import { InstructordetailApplicantpageComponent } from './components/applicantpage/instructordetail-applicantpage/instructordetail-applicantpage/instructordetail-applicantpage.component';
 import { InstructordetailInstructorpageComponent } from './components/instructorpage/instructordetail-instructorpage/instructordetail-instructorpage/instructordetail-instructorpage.component';
@@ -187,6 +189,9 @@ const routes: Routes = [
         path: 'applicant-applicants/applicantdetail/:id',
         component: ApplicantdetailApplicantpageComponent,
       },
+      {
+        path:'applicant-profile',component:ApplicantprofileComponent
+       },
       //End of admin applicant
 
       //Child of admin application
