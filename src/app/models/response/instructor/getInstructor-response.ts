@@ -8,4 +8,11 @@ export interface IGetInstructorResponseModel {
   nationalIdentity: number;
   dateOfBirth: string;
   image:string;
+  title:string;
+  instagramadress:string;
+  twitteradress:string;
+  githubadress:string
+
+
+
 }
