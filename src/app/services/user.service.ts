@@ -16,12 +16,10 @@ export class UserService {
 
   addApplicant(applicant){
     return this.httpClient.post(this.apiurl,applicant)
-
   }
 
   applicantDelete(data):Observable<IGetAllApplicantResponseModel>{
     return this.httpClient.delete<IGetAllApplicantResponseModel>(this.apiurl+'/' +data.id);
-
   }
 
   addEmployee(employee){
@@ -30,7 +28,6 @@ export class UserService {
 
   employeeDelete(data):Observable<IGetAllEmployeeResponseModel>{
     return this.httpClient.delete<IGetAllEmployeeResponseModel>(this.apiurl+'/' +data.id);
-
   }
 
   
@@ -40,7 +37,6 @@ export class UserService {
 
   instructorDelete(data):Observable<IGetAllInstructorResponseModel>{
     return this.httpClient.delete<IGetAllInstructorResponseModel>(this.apiurl+'/' +data.id);
-
   }
 
 
