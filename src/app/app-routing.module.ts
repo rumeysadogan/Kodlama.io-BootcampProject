@@ -1,3 +1,4 @@
+import { AddblacklistComponent } from './components/instructorpage/addblacklist/addblacklist.component';
 import { ApplicantprofileComponent } from './components/applicantpage/applicantprofile/applicantprofile.component';
 
 import { ApplicantdetailApplicantpageComponent } from './components/applicantpage/applicantdetail-applicantpage/applicantdetail-applicantpage.component';
@@ -255,6 +256,9 @@ const routes: Routes = [
         path: 'instructor-applicants/instructor/:id',
         component: ApplicantdetailInstructorpageComponent,
       },
+      {
+        path:'instructor-blacklist/create-blacklist/:id',component:AddblacklistComponent
+      }
       //End of admin applicant
 
       //Child of admin application
