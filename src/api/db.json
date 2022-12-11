@@ -22,7 +22,7 @@
       "nationalIdentity": 12345678912,
       "dateOfBirth": "18/01/1995",
       "about": "Bilgisayar Programcılığı",
-      "image": "https://www.clipartmax.com/png/middle/257-2572603_user-man-social-avatar-profile-icon-man-avatar-in-circle.png",
+      "image": "https://c8.alamy.com/zooms/9/bdd86bbc1d0f4303b01ae552ebadb52e/kfeafg.jpg",
       "role": "roleApplicant",
       "state": 1
     },
@@ -74,7 +74,7 @@
       "dateOfBirth": "10/10/1997",
       "about": "Ziraat Mühendisi",
       "id": 6,
-      "image": "https://e7.pngegg.com/pngimages/799/987/png-clipart-computer-icons-avatar-icon-design-avatar-heroes-computer-wallpaper.png",
+      "image": "https://airnfts.s3.amazonaws.com/profile-images/0xD9c4216cFE7c70344f80035B0bf5FBE01AA69d37_1619305985184.png",
       "role": "roleApplicant",
       "state": 0
     },
@@ -86,7 +86,10 @@
       "nationalIdentity": 14786990873,
       "dateOfBirth": "30/07/1990",
       "about": "Mezun",
-      "id": 7
+      "id": 7,
+      "image": "https://c8.alamy.com/zooms/9/756e2177abb24ba2b0a07fdb7733602f/kfeaf4.jpg",
+      "role": "roleApplicant",
+      "state": 1
     },
     {
       "firstName": "Burak",
