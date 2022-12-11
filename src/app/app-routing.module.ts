@@ -1,3 +1,4 @@
+
 import { ApplicantdetailApplicantpageComponent } from './components/applicantpage/applicantdetail-applicantpage/applicantdetail-applicantpage.component';
 import { InstructordetailApplicantpageComponent } from './components/applicantpage/instructordetail-applicantpage/instructordetail-applicantpage/instructordetail-applicantpage.component';
 import { InstructordetailInstructorpageComponent } from './components/instructorpage/instructordetail-instructorpage/instructordetail-instructorpage/instructordetail-instructorpage.component';
@@ -219,10 +220,10 @@ const routes: Routes = [
 
     //Child of admin instructor
     
-    // {
-    //   path: 'admin-instructor/instructor/:id',
-    //   component: GetInstructorComponent,
-    // },
+    {
+       path: 'instructor-instructor/instructor/:id',
+       component: InstructordetailInstructorpageComponent,
+    },
     
     //Child of admin applicant
   

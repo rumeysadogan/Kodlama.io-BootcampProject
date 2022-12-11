@@ -59,7 +59,7 @@ import { InstructordetailApplicantpageComponent } from './components/applicantpa
 import { InstructordetailInstructorpageComponent } from './components/instructorpage/instructordetail-instructorpage/instructordetail-instructorpage/instructordetail-instructorpage.component';
 import { ApplicantdetailApplicantpageComponent } from './components/applicantpage/applicantdetail-applicantpage/applicantdetail-applicantpage.component';
 import { ApplicantHeaderComponent } from './components/layouts/applicant-header/applicant-header.component';
-
+import { BootcamplistComponentInstructor } from './components/instructorpage/bootcamplist-instructorpage/bootcamplist.component';
 
 
 
@@ -117,6 +117,7 @@ import { ApplicantHeaderComponent } from './components/layouts/applicant-header/
     InstructordetailInstructorpageComponent,
     ApplicantdetailApplicantpageComponent,
     ApplicantHeaderComponent,
+    BootcamplistComponentInstructor
   ],
   imports: [
     BrowserModule,
