@@ -1,3 +1,6 @@
+import { ApplicantdetailApplicantpageComponent } from './components/applicantpage/applicantdetail-applicantpage/applicantdetail-applicantpage.component';
+import { InstructordetailApplicantpageComponent } from './components/applicantpage/instructordetail-applicantpage/instructordetail-applicantpage/instructordetail-applicantpage.component';
+import { InstructordetailInstructorpageComponent } from './components/instructorpage/instructordetail-instructorpage/instructordetail-instructorpage/instructordetail-instructorpage.component';
 
 import { InstructorhomeComponent } from './components/instructorhome/instructorhome.component';
 import { InstructorlistInstructorpageComponent } from './components/instructorpage/instructorlist-instructorpage/instructorlist-instructorpage.component';
@@ -161,8 +164,8 @@ const routes: Routes = [
     //Child of admin instructor
     
      {
-      path: 'applicant-instructors/instructor/:id',
-      component: GetInstructorComponent,
+      path: 'applicant-instructors/instructordetail/:id',
+      component: InstructordetailApplicantpageComponent,
     },
     
     //Child of admin applicant
@@ -172,8 +175,8 @@ const routes: Routes = [
       component: ApplicantupdateComponentApplicant,
     },
      {
-      path: 'applicant-applicants/applicant/:id',
-      component: GetApplicantComponent,
+      path: 'applicant-applicants/applicantdetail/:id',
+      component: ApplicantdetailApplicantpageComponent,
      },
     //End of admin applicant
 
