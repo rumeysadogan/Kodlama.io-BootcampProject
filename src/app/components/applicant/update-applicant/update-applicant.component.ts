@@ -38,6 +38,11 @@ export class UpdateApplicantComponent implements OnInit {
       nationalIdentity:[this.applicants.nationalIdentity,Validators.required],
       dateOfBirth:[this.applicants.dateOfBirth,Validators.required],
       about:[this.applicants.about,Validators.required],
+      image:[this.applicants.image,Validators.required],
+      state:['1',Validators.required],
+      role:['roleApplicant',Validators.required],
+      
+
 
     
     })}
