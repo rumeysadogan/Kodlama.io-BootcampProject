@@ -106,12 +106,13 @@ const routes: Routes = [
 
       //Child of admin blacklist
       {
-        path: 'admin-blacklist/create-blacklist',
+        path: 'admin-blacklist/create-blacklist/:id',
         component: CreateBlacklistComponent,
       },
+      
       {
-        path: 'admin-blacklist/blacklist/:id',
-        component: GetBlacklistComponent,
+        path: 'admin-blacklist/blacklist',
+        component: GetAllBlacklistComponent,
       },
       {
         path: 'admin-blacklist/update-blacklist/:id',

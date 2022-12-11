@@ -22,7 +22,7 @@ export class CreateBlacklistComponent implements OnInit {
 
   ngOnInit(): void {
     this.createAddBlacklistForm();
-    this.getAllApplicants();
+    
   }
 
   id:number;
