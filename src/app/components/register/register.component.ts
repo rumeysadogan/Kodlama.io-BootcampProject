@@ -53,7 +53,6 @@ export class RegisterComponent implements OnInit {
         setTimeout(() => {
           this.router.navigate(['/login']);
         }, 200);
-        0;
       });
     } else {
       this.scroolToTop();
