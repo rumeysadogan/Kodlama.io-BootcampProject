@@ -33,6 +33,11 @@ export class ApplicationService {
   }
 
 
+  add(value) {
+    return this.httpClient.post(this.apiurl, value);
+  }
+
+
 }
 
 
