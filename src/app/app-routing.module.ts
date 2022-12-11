@@ -1,3 +1,4 @@
+import { UpdateherselfComponent } from './components/updateherself/updateherself.component';
 import { InstructorupdateComponent } from './components/instructorpage/instructorupdate-instructorpage/instructorupdate.component';
 import { EmployeeprofileComponent } from './components/employeeprofile/employeeprofile.component';
 import { InstructorprofileComponent } from './components/instructorpage/instructorprofile/instructorprofile.component';
@@ -154,6 +155,9 @@ const routes: Routes = [
       },
       {
         path:'admin-profile',component:EmployeeprofileComponent
+      },
+      {
+        path:'admin-profile/update/:id',component:UpdateherselfComponent
       }
     ],
   },
@@ -200,6 +204,7 @@ const routes: Routes = [
       {
         path:'applicant-profile',component:ApplicantprofileComponent
        },
+       
       //End of admin applicant
 
       //Child of admin application

@@ -65,6 +65,7 @@ import { BootcamplistComponentInstructor } from './components/instructorpage/boo
 import { ApplicantdetailInstructorpageComponent } from './components/instructorpage/applicantdetail-instructorpage/applicantdetail-instructorpage.component';
 import { InstructorprofileComponent } from './components/instructorpage/instructorprofile/instructorprofile.component';
 import { EmployeeprofileComponent } from './components/employeeprofile/employeeprofile.component';
+import { UpdateherselfComponent } from './components/updateherself/updateherself.component';
 
 
 
@@ -127,7 +128,8 @@ import { EmployeeprofileComponent } from './components/employeeprofile/employeep
     ApplicantprofileComponent,
     ApplicantdetailInstructorpageComponent,
     InstructorprofileComponent,
-    EmployeeprofileComponent
+    EmployeeprofileComponent,
+    UpdateherselfComponent
   ],
   imports: [
     BrowserModule,
