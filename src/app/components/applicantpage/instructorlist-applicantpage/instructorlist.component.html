@@ -1,14 +1,11 @@
 <div class="container">
     <div class="row">
-        <div class="col-md-3">
-            <!-- <app-sidebar></app-sidebar> -->
-        </div>
-
+        <app-applicant-sidebar></app-applicant-sidebar>
 
         <div class="col-md-9 d-lg-flex">
 
             <div>
-                
+
                 <div class="container text-center">
                     <br>
                     <div class="container blog-page">
@@ -32,12 +29,12 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="body">
+                                    <div class="body" style="width: auto; height:430px;">
                                         <div class="img-post m-b-15">
                                             <img src="{{instructor.image}}" alt="Awesome Image">
                                             <div class="social_share">
                                                 <button class="btn btn-warning btn-icon btn-icon-mini "
-                                                       routerLink="{{instructor.instagram}}"><i
+                                                    routerLink="{{instructor.instagram}}"><i
                                                         class="zmdi zmdi-instagram"></i></button>
                                                 <button class="btn btn-warning btn-icon btn-icon-mini "
                                                     routerLink="{{instructor.twitter}}"><i
@@ -47,7 +44,23 @@
                                                         class="zmdi zmdi-github"></i></button>
                                             </div>
                                         </div>
-                                        <p>{{instructor.title}} <br>{{instructor.email}}</p>
-                                        <a title="detay" class="btn btn-round btn-warning"
-                                            routerLink="/instructors/instructor/{{instructor.id}}">Detay</a>
-                                                                  
+                                        <div style="height: 85px; width: auto;">
+                                            <p>{{instructor.title}} <br>{{instructor.email}}</p>
+                                        </div>
+                                        <div>
+                                            <a title="detay" class="btn btn-round btn-warning"
+                                                routerLink="/admin/admin-instructor/instructor/:{{instructor.id}}">Detay</a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
