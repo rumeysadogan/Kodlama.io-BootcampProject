@@ -223,8 +223,8 @@ const routes: Routes = [
     
     //Child of admin applicant
   
-    // {
-    //   path: 'applicant-applicants/applicant/:id',
+
+    //   path: 'instructor-applicants/instructor/:id',
     //   component: GetApplicantComponent,
     // },
     //End of admin applicant
@@ -244,7 +244,7 @@ const routes: Routes = [
     // },
    
    
-    { path: 'instructor-bootcamps/bootcamp/:id', component: GetBootcampComponent },
+   // { path: 'instructor-bootcamps/bootcamp/:id', component: GetBootcampComponent },
     
    
     
