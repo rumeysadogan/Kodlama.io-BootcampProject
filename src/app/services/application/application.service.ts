@@ -1,3 +1,4 @@
+import { ICreateApplicationRequestModel } from './../../models/request/application/create-application-request';
 import { Observable } from 'rxjs';
 import { IGetApplicationResponseModel } from './../../models/response/application/getApplication-response';
 import { IGetAllApplicationResponseModel } from './../../models/response/application/getAllApplication-response';
@@ -35,6 +36,11 @@ export class ApplicationService {
 
   add(value) {
     return this.httpClient.post(this.apiurl, value);
+  }
+
+  getUserId(id:string):Observable<ICreateApplicationRequestModel[]>{
+    return this.httpClient.get<ICreateApplicationRequestModel[]>(this.apiurl + '?applicantId=' + id);
+
   }
 
 

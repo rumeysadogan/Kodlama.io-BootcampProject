@@ -43,16 +43,17 @@ export class BootcamplistComponentApplicant implements OnInit {
     this.setBootcamp = bootcamp;
     this.send();
     this.toastrService.success('Başvuru Yapıldı', 'Başarılı');
+
+    this.router.navigate(['applicant/applicant-profile']);
   }
   send() {
     let bootcampData = Object.assign({});
 
     bootcampData.bootcampId = this.setBootcamp.id;
     bootcampData.bootcampName = this.setBootcamp.name;
-    bootcampData.userName = this.setBootcamp.instructorName;
+    bootcampData.instructorName = this.setBootcamp.instructorName;
     bootcampData.state = 1;
-    bootcampData.userId = localStorage.getItem('userId');
-    bootcampData.applyName = localStorage.getItem('name');
+    bootcampData.applicantId = localStorage.getItem('id');
     this.applicationService.add(bootcampData).subscribe();
   }
 
