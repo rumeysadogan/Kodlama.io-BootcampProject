@@ -324,6 +324,14 @@
       "bootcampId": 3,
       "bootcampName": "UX/UI Designer",
       "state": 1
+    },
+    {
+      "bootcampId": 2,
+      "bootcampName": "Backend",
+      "instructorName": "Mustafa Murat COŞKUN",
+      "state": 1,
+      "applicantId": "5",
+      "id": 3
     }
   ],
   "users": [
