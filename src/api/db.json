@@ -285,15 +285,7 @@
       "instructorName": "Erdoğan ÖZTÜRK"
     }
   ],
-  "blacklist": [
-    {
-      "id": 1,
-      "applicantId": 5,
-      "applicantName": "Ahmet Karagöz",
-      "date": "30/11/2022",
-      "reason": "bencil adam"
-    }
-  ],
+  "blacklist": [],
   "application": [
     {
       "id": 1,
