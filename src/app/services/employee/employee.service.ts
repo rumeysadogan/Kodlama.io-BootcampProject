@@ -11,6 +11,7 @@ import { ICreateEmployeeRequestModel } from 'src/app/models/request/employee/cre
 })
 export class EmployeeService {
   apiUrl = 'http://localhost:3000/employee';
+  url= 'http://localhost:3000/users'
   constructor(private httpClient: HttpClient) {}
 
   addEmployee(employee: ICreateEmployeeRequestModel) {
@@ -35,7 +36,7 @@ export class EmployeeService {
   }
   getEmployeeById(id): Observable<IGetEmployeeResponseModel> {
     return this.httpClient.get<IGetEmployeeResponseModel>(
-      this.apiUrl + '/' + id
+      this.url + '/' + id
     );
   }
 }
