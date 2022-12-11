@@ -1,3 +1,6 @@
+import { ActivatedRoute } from '@angular/router';
+import { InstructorService } from './../../../services/instructor/instructor.service';
+import { IGetInstructorResponseModel } from 'src/app/models/response/instructor/getInstructor-response';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +10,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InstructorprofileComponent implements OnInit {
 
-  constructor() { }
+ 
+  instructor:IGetInstructorResponseModel;
+  constructor(private instructorService:InstructorService,
+    private activatedRoute:ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.getInstructor(localStorage.getItem("id"))
   }
 
+
+  getInstructor(id){
+    this.instructorService.getInstructor(id).subscribe((data)=>{
+      this.instructor=data;
+    });
+  }
 }

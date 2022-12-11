@@ -1,3 +1,4 @@
+import { InstructorupdateComponent } from './components/instructorpage/instructorupdate-instructorpage/instructorupdate.component';
 import { EmployeeprofileComponent } from './components/employeeprofile/employeeprofile.component';
 import { InstructorprofileComponent } from './components/instructorpage/instructorprofile/instructorprofile.component';
 import { AddblacklistComponent } from './components/instructorpage/addblacklist/addblacklist.component';
@@ -266,6 +267,9 @@ const routes: Routes = [
       },
       {
         path:'instructor-blacklist/create-blacklist/:id',component:AddblacklistComponent
+      },
+      {
+        path:'instructor-profile/update/:id',component:InstructorupdateComponent
       }
       //End of admin applicant
 
