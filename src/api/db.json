@@ -85,11 +85,8 @@
       "password": "12345",
       "nationalIdentity": 14786990873,
       "dateOfBirth": "30/07/1990",
-      "about": "Öğrenci",
-      "id": 7,
-      "image": "https://www.clipartmax.com/png/middle/257-2572603_user-man-social-avatar-profile-icon-man-avatar-in-circle.png",
-      "role": "roleApplicant",
-      "state": 1
+      "about": "Mezun",
+      "id": 7
     },
     {
       "firstName": "Burak",
