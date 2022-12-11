@@ -135,7 +135,7 @@
       "dateOfBirth": "18/09/1997",
       "about": "Yazılımcı",
       "role": "roleApplicant",
-      "state": 1,
+      "state": 0,
       "token": 462452156547856,
       "expiration": "sdfsdfhjfghgdfad",
       "id": 11
@@ -299,7 +299,15 @@
       "instructorName": "Erdoğan ÖZTÜRK"
     }
   ],
-  "blacklist": [],
+  "blacklist": [
+    {
+      "date": "12.03.2022",
+      "reason": "Yalancı",
+      "applicantId": "11",
+      "applicantName": "Ayşe Başar",
+      "id": 1
+    }
+  ],
   "application": [
     {
       "id": 1,
