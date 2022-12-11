@@ -47,6 +47,7 @@ import { ApplicantlistComponentApplicant } from './components/applicantpage/appl
 import { BootcamplistComponentApplicant } from './components/applicantpage/bootcamplist-applicantpage/bootcamplist.component';
 import { BlacklistComponentInstructor } from './components/instructorpage/blacklist-instructorpage/blacklist.component';
 import { BootcampdetailInstructorpageComponent } from './components/instructorpage/bootcampdetail-instructorpage/bootcampdetail-instructorpage.component';
+import { ApplicantdetailInstructorpageComponent } from './components/instructorpage/applicantdetail-instructorpage/applicantdetail-instructorpage.component';
 
 const routes: Routes = [
   //admin start
@@ -244,7 +245,7 @@ const routes: Routes = [
       //Child of admin instructor
 
       {
-        path: 'instructor-instructor/instructor/:id',
+        path: 'instructor-instructors/instructor/:id',
         component: InstructordetailInstructorpageComponent,
       },
 
@@ -252,7 +253,7 @@ const routes: Routes = [
 
       {
         path: 'instructor-applicants/instructor/:id',
-        component: GetApplicantComponent,
+        component: ApplicantdetailInstructorpageComponent,
       },
       //End of admin applicant
 
