@@ -35,38 +35,6 @@
       <div class="col-12 col-xl-4 mb-4">
         <div class="card border shadow-xs h-100">
           <div class="card-header pb-0 p-3">
-            <h6 class="mb-0 font-weight-semibold text-lg">Uyarılar</h6>
-
-          </div>
-          <div class="card-body p-3">
-            <h6 class="text-dark font-weight-semibold mb-1">Hesabım</h6>
-            <ul class="list-group">
-              <li class="list-group-item border-0 px-0">
-                <div class="form-check form-switch ps-0">
-                  <input class="form-check-input ms-auto" type="checkbox" id="flexSwitchCheckDefault" checked>
-                  <label class="form-check-label text-body ms-3 text-truncate w-80 mb-0"
-                    for="flexSwitchCheckDefault">Email me when someone follows me</label>
-                </div>
-              </li>
-
-            </ul>
-            <h6 class="text-dark font-weight-semibold mt-2 mb-1">Uygulamalar</h6>
-            <ul class="list-group">
-              <li class="list-group-item border-0 px-0">
-                <div class="form-check form-switch ps-0">
-                  <input class="form-check-input ms-auto" type="checkbox" id="flexSwitchCheckDefault3">
-                  <label class="form-check-label text-body ms-3 text-truncate w-80 mb-0"
-                    for="flexSwitchCheckDefault3">New launches and projects</label>
-                </div>
-              </li>
-
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-xl-4 mb-4">
-        <div class="card border shadow-xs h-100">
-          <div class="card-header pb-0 p-3">
             <div class="row">
               <div class="col-md-8 col-9">
                 <h6 class="mb-0 font-weight-semibold text-lg">Profil Bilgisi</h6>
@@ -84,59 +52,43 @@
             </div>
           </div>
           <div class="card-body p-3">
-            <p class="text-sm mb-4">
-              Hi, I’m Alec Thompson, Decisions: If you can’t decide, the answer is no. If two equally difficult paths,
-              choose the one more painful in the short term (pain avoidance is creating an illusion of equality).
-            </p>
             <ul class="list-group">
               <li class="list-group-item border-0 ps-0 text-dark font-weight-semibold pt-0 pb-1 text-sm"><span
-                  class="text-secondary">First Name:</span> &nbsp; Noah</li>
+                  class="text-secondary">First Name:</span> &nbsp; {{instructors.firstName}}</li>
               <li class="list-group-item border-0 ps-0 text-dark font-weight-semibold pb-1 text-sm"><span
-                  class="text-secondary">Last Name:</span> &nbsp; Mclaren</li>
+                  class="text-secondary">Last Name:</span> &nbsp;{{instructors.lastName}} </li>
               <li class="list-group-item border-0 ps-0 text-dark font-weight-semibold pb-1 text-sm"><span
-                  class="text-secondary">Mobile:</span> &nbsp; +(44) 123 1234 123</li>
+                  class="text-secondary">Job:</span> &nbsp; {{instructors.title}}</li>
               <li class="list-group-item border-0 ps-0 text-dark font-weight-semibold pb-1 text-sm"><span
-                  class="text-secondary">Function:</span> &nbsp; Manager - Organization</li>
-              <li class="list-group-item border-0 ps-0 text-dark font-weight-semibold pb-1 text-sm"><span
-                  class="text-secondary">Location:</span> &nbsp; USA</li>
-              <li class="list-group-item border-0 ps-0 text-dark font-weight-semibold pb-1 text-sm">
-                <span class="text-secondary">Social:</span> &nbsp;
-                <a class="btn btn-link text-dark mb-0 ps-1 pe-1 py-0" href="javascript:;">
-                  <i class="fab fa-linkedin fa-lg"></i>
-                </a>
-                <a class="btn btn-link text-dark mb-0 ps-1 pe-1 py-0" href="javascript:;">
-                  <i class="fab fa-github fa-lg"></i>
-                </a>
-                <a class="btn btn-link text-dark mb-0 ps-1 pe-1 py-0" href="javascript:;">
-                  <i class="fab fa-slack fa-lg"></i>
-                </a>
-              </li>
+                  class="text-secondary">Company Name:</span> &nbsp; {{instructors.companyName}}</li>
+
+              
+              
             </ul>
           </div>
         </div>
       </div>
-      <!-- <div class="col-12 col-xl-4 mb-4">
-        <div class="card border shadow-xs h-100">
+      <div class="col-12 col-xl-4 mb-4">
+        <div class="card border shadow-xs h-100" >
+            <span class="text-secondary">Twitter Adress</span>
+            <a class="btn btn-link text-dark mb-0 ps-1 pe-1 py-0" >
+              <i class="fa fa-twitter" aria-hidden="true">{{instructors.twitteradress}}</i>
+            </a>
+            <br>
+            <span class="text-secondary">Github Adress</span>
+            <a class="btn btn-link text-dark mb-0 ps-1 pe-1 py-0">
+              <i class="fab fa-github fa-lg"aria-hidden="true">{{instructors.githubadress}}</i>
+            </a>
+            <br>
+            <span class="text-secondary">Instagram Adress</span>
+            <a class="btn btn-link text-dark mb-0 ps-1 pe-1 py-0" href="javascript:;">
+              <i class="fa fa-instagram" aria-hidden="true">{{instructors.instagramadress}}</i>
+            </a>
+        
           
-          <div class="card-body p-3 pt-0">
-            <ul class="list-group">
-
-              <li class="list-group-item border-0 d-flex align-items-center px-0 mb-1">
-                <div class="avatar avatar-sm rounded-circle me-2">
-                  <img src="../assets/img/team-2.jpg" alt="kal" class="w-100">
-                </div>
-                <div class="d-flex align-items-start flex-column justify-content-center">
-                  <h6 class="mb-0 text-sm font-weight-semibold">Miriam Lore</h6>
-                  <p class="mb-0 text-sm text-secondary">Well done!</p>
-                </div>
-                <span class="p-1 bg-success rounded-circle ms-auto me-3">
-                  <span class="visually-hidden">Online</span>
-                </span>
-              </li>
-            </ul>
-          </div>
+          
         </div>
-      </div> -->
+      </div>
 
     </div>
 

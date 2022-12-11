@@ -117,9 +117,9 @@
       "dateOfBirth": "01/01/1980",
       "image": "https://pbs.twimg.com/profile_images/1404479261566713856/_MklDkhx_400x400.jpg",
       "title": "Yazılım Geliştirme Eğitmeni",
-      "instagram": "https://www.instagram.com/engindemirog/",
-      "twitter": "https://twitter.com/engindemirog",
-      "github": "https://github.com/engindemirog",
+      "instagramadress": "https://www.instagram.com/engindemirog/",
+      "twitteradress": "https://twitter.com/engindemirog",
+      "githubadress": "https://github.com/engindemirog",
       "role": "roleInstructor"
     },
     {
@@ -133,9 +133,9 @@
       "dateOfBirth": "01/01/1985",
       "image": "https://avatars.githubusercontent.com/u/15064847?v=4",
       "title": "Yazılım Geliştirici",
-      "instagram": "https://www.instagram.com/mustafamuratcoskunn/",
-      "twitter": "https://twitter.com/mustafam_coskun",
-      "github": "https://github.com/mustafamuratcoskun",
+      "instagramadress": "https://www.instagram.com/mustafamuratcoskunn/",
+      "twitteradress": "https://twitter.com/mustafam_coskun",
+      "githubadress": "https://github.com/mustafamuratcoskun",
       "role": "roleInstructor"
     },
     {
@@ -149,9 +149,9 @@
       "dateOfBirth": "01/01/1980",
       "image": "https://pbs.twimg.com/profile_images/809026982172360704/aQGdnZzH_400x400.jpg",
       "title": "Yazılım Mimarı",
-      "instagram": "https://www.instagram.com/dijital_dervis/",
-      "twitter": "https://twitter.com/erdoganblog",
-      "github": "https://github.com/dijitaldervis",
+      "instagramadress": "https://www.instagram.com/dijital_dervis/",
+      "twitteradress": "https://twitter.com/erdoganblog",
+      "githubadress": "https://github.com/dijitaldervis",
       "role": "roleInstructor"
     }
   ],
