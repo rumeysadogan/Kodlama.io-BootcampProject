@@ -103,6 +103,28 @@
       "image": "https://www.shareicon.net/data/512x512/2016/09/15/829444_man_512x512.png",
       "role": "roleApplicant",
       "state": 1
+    },
+    {
+      "firstName": "Onur",
+      "lastName": "Özüpek",
+      "email": "onur@gmail.com",
+      "password": "12345",
+      "nationalIdentity": 3633748373673845,
+      "dateOfBirth": "20/10/1995",
+      "about": "Bilgisayar Mühendisi",
+      "role": "roleApplicant",
+      "id": 9
+    },
+    {
+      "firstName": "Onur",
+      "lastName": "Özüpek",
+      "email": "onur@gmail.com",
+      "password": "12345",
+      "nationalIdentity": 3633748373673845,
+      "dateOfBirth": "20/10/1995",
+      "about": "Bilgisayar Mühendisi",
+      "role": "roleApplicant",
+      "id": 10
     }
   ],
   "instructor": [
@@ -446,6 +468,17 @@
       "role": "roleAdmin",
       "expiration": "dswadfedgdsg",
       "token": "321324548562532"
+    },
+    {
+      "firstName": "Onur",
+      "lastName": "Özüpek",
+      "email": "onur@gmail.com",
+      "password": "12345",
+      "nationalIdentity": 3633748373673845,
+      "dateOfBirth": "20/10/1995",
+      "about": "Bilgisayar Mühendisi",
+      "role": "roleApplicant",
+      "id": 16
     }
   ]
 }

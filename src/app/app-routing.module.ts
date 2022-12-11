@@ -160,10 +160,10 @@ const routes: Routes = [
 
     //Child of admin instructor
     
-    // {
-    //   path: 'admin-instructor/instructor/:id',
-    //   component: GetInstructorComponent,
-    // },
+     {
+      path: 'applicant-instructors/instructor/:id',
+      component: GetInstructorComponent,
+    },
     
     //Child of admin applicant
     
@@ -171,10 +171,10 @@ const routes: Routes = [
       path: 'applicant-applicants/update-applicant/:id',
       component: ApplicantupdateComponentApplicant,
     },
-    // {
-    //   path: 'applicant-applicants/applicant/:id',
-    //   component: GetApplicantComponent,
-    // },
+     {
+      path: 'applicant-applicants/applicant/:id',
+      component: GetApplicantComponent,
+     },
     //End of admin applicant
 
     //Child of admin application
