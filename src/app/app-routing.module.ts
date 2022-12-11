@@ -1,4 +1,3 @@
-
 import { ApplicantdetailApplicantpageComponent } from './components/applicantpage/applicantdetail-applicantpage/applicantdetail-applicantpage.component';
 import { InstructordetailApplicantpageComponent } from './components/applicantpage/instructordetail-applicantpage/instructordetail-applicantpage/instructordetail-applicantpage.component';
 import { InstructordetailInstructorpageComponent } from './components/instructorpage/instructordetail-instructorpage/instructordetail-instructorpage/instructordetail-instructorpage.component';
@@ -113,7 +112,7 @@ const routes: Routes = [
         path: 'admin-blacklist/create-blacklist/:id',
         component: CreateBlacklistComponent,
       },
-      
+
       {
         path: 'admin-blacklist/blacklist',
         component: GetAllBlacklistComponent,
@@ -149,124 +148,129 @@ const routes: Routes = [
     ],
   },
   {
-  path: 'applicant',
-  component: ApplicanthomeComponent,
-  canActivate: [LoginguardGuard],
-  children: [
-    { path: 'applicant-instructors', component: InstructorlistComponentApplicant },
-    { path: 'applicant-applicants', component: ApplicantlistComponentApplicant  },
-    // { path: 'admin-application', component: GetAllApplicationComponent },
-    // { path: 'admin-blacklist', component: GetAllBlacklistComponent },
-    { path: 'applicant-bootcamps', component: BootcamplistComponentApplicant},
-    // { path: 'applicant-bootcamps/bootcamp/:id', component: BootcampdetailComponentApplicant },
+    path: 'applicant',
+    component: ApplicanthomeComponent,
+    canActivate: [LoginguardGuard],
+    children: [
+      {
+        path: 'applicant-instructors',
+        component: InstructorlistComponentApplicant,
+      },
+      {
+        path: 'applicant-applicants',
+        component: ApplicantlistComponentApplicant,
+      },
+      // { path: 'admin-application', component: GetAllApplicationComponent },
+      // { path: 'admin-blacklist', component: GetAllBlacklistComponent },
+      {
+        path: 'applicant-bootcamps',
+        component: BootcamplistComponentApplicant,
+      },
+      // { path: 'applicant-bootcamps/bootcamp/:id', component: BootcampdetailComponentApplicant },
 
-    //Main Child Finish
+      //Main Child Finish
 
-    //Child of admin instructor
-    
-     {
-      path: 'applicant-instructors/instructordetail/:id',
-      component: InstructordetailApplicantpageComponent,
-    },
-    
-    //Child of admin applicant
-    
-    {
-      path: 'applicant-applicants/update-applicant/:id',
-      component: ApplicantupdateComponentApplicant,
-    },
-     {
-      path: 'applicant-applicants/applicantdetail/:id',
-      component: ApplicantdetailApplicantpageComponent,
-     },
-    //End of admin applicant
+      //Child of admin instructor
 
-    //Child of admin application
-    // {
-    //   path: 'admin-application/create-application',
-    //   component: CreateApplicationComponent,
-    // },
-    // {
-    //   path: 'admin-application/application/:id',
-    //   component: GetApplicationComponent,
-    // },
-    // {
-    //   path: 'admin-application/update-application/:id',
-    //   component: UpdateApplicationComponent,
-    // },
-   
-   
-    { path: 'applicant-bootcamps/bootcamp/:id', component: GetBootcampComponent },
-    
-   
-    
+      {
+        path: 'applicant-instructors/instructordetail/:id',
+        component: InstructordetailApplicantpageComponent,
+      },
 
-  ],
-},
+      //Child of admin applicant
 
-{
-  path: 'instructor',
-  component: InstructorhomeComponent,
-  canActivate: [LoginguardGuard],
-  children: [
-    { path: 'instructor-instructors', component: InstructorlistInstructorpageComponent },
-    { path: 'instructor-applicants', component: ApplicantlistComponentInstructor },
-    // { path: 'admin-application', component: GetAllApplicationComponent },
-    { path: 'instructor-blacklist', component: BlacklistComponentInstructor },
-    { path: 'instructor-bootcamps', component: BootcamplistComponentInstructor},
-    { path: 'instructor-bootcamps/bootcamp/:id', component: BootcampdetailInstructorpageComponent},
+      {
+        path: 'applicant-applicants/update-applicant/:id',
+        component: ApplicantupdateComponentApplicant,
+      },
+      {
+        path: 'applicant-applicants/applicantdetail/:id',
+        component: ApplicantdetailApplicantpageComponent,
+      },
+      //End of admin applicant
 
-    //Main Child Finish
+      //Child of admin application
+      // {
+      //   path: 'admin-application/create-application',
+      //   component: CreateApplicationComponent,
+      // },
+      // {
+      //   path: 'admin-application/application/:id',
+      //   component: GetApplicationComponent,
+      // },
+      // {
+      //   path: 'admin-application/update-application/:id',
+      //   component: UpdateApplicationComponent,
+      // },
 
-    //Child of admin instructor
-    
-    {
-       path: 'instructor-instructor/instructor/:id',
-       component: InstructordetailInstructorpageComponent,
-    },
-    
-    //Child of admin applicant
-  
+      {
+        path: 'applicant-bootcamps/bootcamp/:id',
+        component: GetBootcampComponent,
+      },
+    ],
+  },
 
-    //   path: 'instructor-applicants/instructor/:id',
-    //   component: GetApplicantComponent,
-    // },
-    //End of admin applicant
+  {
+    path: 'instructor',
+    component: InstructorhomeComponent,
+    canActivate: [LoginguardGuard],
+    children: [
+      {
+        path: 'instructor-instructors',
+        component: InstructorlistInstructorpageComponent,
+      },
+      {
+        path: 'instructor-applicants',
+        component: ApplicantlistComponentInstructor,
+      },
+      // { path: 'admin-application', component: GetAllApplicationComponent },
+      { path: 'instructor-blacklist', component: BlacklistComponentInstructor },
+      {
+        path: 'instructor-bootcamps',
+        component: BootcamplistComponentInstructor,
+      },
+      {
+        path: 'instructor-bootcamps/bootcamp/:id',
+        component: BootcampdetailInstructorpageComponent,
+      },
 
-    //Child of admin application
-    // {
-    //   path: 'admin-application/create-application',
-    //   component: CreateApplicationComponent,
-    // },
-    // {
-    //   path: 'admin-application/application/:id',
-    //   component: GetApplicationComponent,
-    // },
-    // {
-    //   path: 'admin-application/update-application/:id',
-    //   component: UpdateApplicationComponent,
-    // },
-   
-   
-   // { path: 'instructor-bootcamps/bootcamp/:id', component: GetBootcampComponent },
-    
-   
-    
+      //Main Child Finish
 
-  ],
-},
+      //Child of admin instructor
 
+      {
+        path: 'instructor-instructor/instructor/:id',
+        component: InstructordetailInstructorpageComponent,
+      },
 
+      //Child of admin applicant
 
+      {
+        path: 'instructor-applicants/instructor/:id',
+        component: GetApplicantComponent,
+      },
+      //End of admin applicant
 
+      //Child of admin application
+      // {
+      //   path: 'admin-application/create-application',
+      //   component: CreateApplicationComponent,
+      // },
+      // {
+      //   path: 'admin-application/application/:id',
+      //   component: GetApplicationComponent,
+      // },
+      // {
+      //   path: 'admin-application/update-application/:id',
+      //   component: UpdateApplicationComponent,
+      // },
 
-  
+      // { path: 'instructor-bootcamps/bootcamp/:id', component: GetBootcampComponent },
+    ],
+  },
 
-  
   // Employee
 
-
- 
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'homepage', component: HomepageComponent },
@@ -276,8 +280,6 @@ const routes: Routes = [
   // { path: 'admin/applicants', component: GetAllApplicantComponent},
   // { path: 'admin/applicant/:id', component: GetApplicantComponent},
   // { path: 'applicants/admin-bootcamp', component: GetAllApplicantComponent},
- 
-  
 ];
 
 @NgModule({
