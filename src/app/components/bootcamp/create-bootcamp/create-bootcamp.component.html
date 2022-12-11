@@ -1,10 +1,11 @@
-<div class="content">
-  <div class="col-md-12">
-    <div class="card">
-      <div class="card-header">
-        <h5 class="title">Bootcamp Ekle</h5>
+<div class="content " >
+  <div class="col-md-6 " >
+    <div class="card ">
+      <div class="card-header bg-gray-100">
+        <br>  <br>
+  <h4>Kurs Ekle</h4>
       </div>
-      <div class="card-body">
+      <div class="card-body bg-gray-100">
         <!-- formGroup="carAddForm" ile map işlemini yapmış oluruz. -->
         <form [formGroup]="bootcampAddForm">
           <div style="margin-top: 5px" class="form-group">
@@ -20,13 +21,7 @@
                 {{ instructor.firstName }} {{ instructor.lastName }}
               </option>
             </select>
-            <!-- <input
-                type="number"
-                id="instructorId"
-                formControlName="instructorId"
-                class="form-control"
-                placeholder="Eğitmen Id Giriniz..."
-               -->
+       
           </div>
           <div style="margin-top: 5px" class="form-group">
             <label for="name">Eğitmen Seçiniz</label>
@@ -70,11 +65,11 @@
           </div>
         </form>
       </div>
-      <div class="car-footer">
+      <div class="bootcamp-footer">
         <div class="d-grid gap-2">
           <button
             style="margin-bottom: 10px; margin-left: 15px; margin-right: 15px"
-            class="btn btn-primary"
+            class="btn btn-success"
             type="button"
             (click)="addBootcamp()"
             routerLink="/create-bootcamp"
