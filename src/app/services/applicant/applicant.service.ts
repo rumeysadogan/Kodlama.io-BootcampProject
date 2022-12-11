@@ -11,7 +11,7 @@ import { ThisReceiver } from '@angular/compiler';
 })
 export class ApplicantService {
 
-  apiurl: string = 'http://localhost:3000/applicant';
+  apiurl: string = 'http://localhost:3000/applicant?state=1';
 
   constructor(private httpClient:HttpClient) { }
 

@@ -1,7 +1,7 @@
 export interface IGetAllBlacklistResponseModel {
   id: number;
   applicantId: number;
-  applicantName:string
+  applicantName: string;
   date: string;
   reason: string;
 }
