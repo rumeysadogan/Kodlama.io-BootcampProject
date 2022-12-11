@@ -63,6 +63,7 @@ export class LoginComponent implements OnInit {
             : this.router.navigate(['applicant']);
           localStorage.setItem('token', data[0].token);
           localStorage.setItem('role', data[0].role);
+          localStorage.setItem('id',data[0].id)
           this.toastrService.success("Giriş Başarılı")
         } else {
           this.toastrService.error("Giriş Başarısız")
