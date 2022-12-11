@@ -1,3 +1,4 @@
+import { ApplicantprofileComponent } from './components/applicantpage/applicantprofile/applicantprofile.component';
 import { ApplicantlistComponentInstructor } from './components/instructorpage/applicantlist-instructorpage/applicantlist.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -119,7 +120,8 @@ import { BootcamplistComponentInstructor } from './components/instructorpage/boo
     ApplicantdetailApplicantpageComponent,
     ApplicantHeaderComponent,
     BootcamplistComponentInstructor,
-    ApplicantlistComponentInstructor
+    ApplicantlistComponentInstructor,
+    ApplicantprofileComponent
   ],
   imports: [
     BrowserModule,
