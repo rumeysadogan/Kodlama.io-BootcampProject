@@ -324,6 +324,14 @@
       "bootcampId": 3,
       "bootcampName": "UX/UI Designer",
       "state": 1
+    },
+    {
+      "bootcampId": 2,
+      "bootcampName": "Backend",
+      "instructorName": "Mustafa Murat COŞKUN",
+      "state": 1,
+      "applicantId": "5",
+      "id": 3
     }
   ],
   "users": [
@@ -419,6 +427,10 @@
       "lastName": "DEMİROĞ",
       "email": "engin@gmail.com",
       "password": "12345",
+      "image": "https://pbs.twimg.com/profile_images/1404479261566713856/_MklDkhx_400x400.jpg",
+      "companyName": "Kodlama.io",
+      "title": "Yazılım Geliştirme Eğitmeni",
+      "dateOfBirth": "01/01/1980",
       "role": "roleInstructor",
       "expiration": "dsgdsgdsg",
       "token": "32532532533456782"
@@ -429,6 +441,10 @@
       "lastName": "COŞKUN",
       "email": "murat@gmail.com",
       "password": "12345",
+      "image": "https://avatars.githubusercontent.com/u/15064847?v=4",
+      "companyName": "murat.com",
+      "title": "Yazılım Geliştirici",
+      "dateOfBirth": "01/01/1985",
       "role": "roleInstructor",
       "expiration": "dsyhggdsg",
       "token": "32441354993456782"
@@ -439,6 +455,10 @@
       "lastName": "ÖZTÜRK",
       "email": "erdogan@gmail.com",
       "password": "12345",
+      "image": "https://pbs.twimg.com/profile_images/809026982172360704/aQGdnZzH_400x400.jpg",
+      "companyName": "erdogan.com",
+      "title": "Yazılım Mimarı",
+      "dateOfBirth": "01/01/1980",
       "role": "roleInstructor",
       "expiration": "dsgdsgdsg",
       "token": "3253253098762532"
@@ -449,6 +469,9 @@
       "lastName": "Pekdemir Taşçı",
       "email": "esra@gmail.com",
       "password": "12345",
+      "dateOfBirth": "01/01/1990",
+      "img": "https://cdn3.iconfinder.com/data/icons/corporate-avatars-in-various-human-skin-tones-1/100/Corporate_Avatars_colour_63-01-512.png",
+      "position": "memur",
       "role": "roleAdmin",
       "expiration": "dsgdsgdsg",
       "token": "321324562532532"
@@ -459,6 +482,9 @@
       "lastName": "Bin Malik Köksal",
       "email": "enes@gmail.com",
       "password": "123456",
+      "dateOfBirth": "15/08/1987",
+      "img": "https://www.linkpicture.com/q/enesbinmalikkoksal.jpg",
+      "position": "memur",
       "role": "roleAdmin",
       "expiration": "dswadfedgdsg",
       "token": "321324548562532"
@@ -469,6 +495,9 @@
       "lastName": "Karakaya",
       "email": "ismail@gmail.com",
       "password": "123456",
+      "dateOfBirth": "29/02/1988",
+      "img": "https://www.linkpicture.com/q/ismailkarakaya_2.jpg",
+      "position": "memur",
       "role": "roleAdmin",
       "expiration": "dswadfedgdsg",
       "token": "321324548562532"
@@ -479,6 +508,9 @@
       "lastName": "Taşçı",
       "email": "serhat@gmail.com",
       "password": "123456",
+      "dateOfBirth": "13/05/1988",
+      "img": "https://www.linkpicture.com/q/serhartasci.jpg",
+      "position": "memur",
       "role": "roleAdmin",
       "expiration": "dswadfedgdsg",
       "token": "321324548562532"

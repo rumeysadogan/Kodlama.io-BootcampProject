@@ -7,18 +7,20 @@ import { Injectable } from '@angular/core';
 import { ICreateEmployeeRequestModel } from 'src/app/models/request/employee/create-employee-request';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class EmployeeService {
- apiUrl = 'http://localhost:3000/employee';
-  constructor( private httpClient:HttpClient) { }
+  apiUrl = 'http://localhost:3000/employee';
+  url= 'http://localhost:3000/users'
+  constructor(private httpClient: HttpClient) {}
 
   addEmployee(employee: ICreateEmployeeRequestModel) {
-    return this.httpClient.post(this.apiUrl,employee);
+    return this.httpClient.post(this.apiUrl, employee);
   }
   getEmployee(id: number): Observable<IGetEmployeeResponseModel> {
     return this.httpClient.get<IGetEmployeeResponseModel>(
-      this.apiUrl + '/' + id);
+      this.apiUrl + '/' + id
+    );
   }
   getAllEmployee(): Observable<IGetAllEmployeeResponseModel[]> {
     return this.httpClient.get<IGetAllEmployeeResponseModel[]>(this.apiUrl);
@@ -29,8 +31,12 @@ export class EmployeeService {
   // deleteEmployee(employee: IGetAllEmployeeResponseModel) {
   //   return this.httpClient.delete(this.apiUrl + '/' + employee.id);
   // }
-  delete(id:number){
-    return this.httpClient.delete(this.apiUrl+"/"+id)
+  delete(id: number) {
+    return this.httpClient.delete(this.apiUrl + '/' + id);
+  }
+  getEmployeeById(id): Observable<IGetEmployeeResponseModel> {
+    return this.httpClient.get<IGetEmployeeResponseModel>(
+      this.url + '/' + id
+    );
   }
 }
-
