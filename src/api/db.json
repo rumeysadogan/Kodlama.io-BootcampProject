@@ -125,6 +125,20 @@
       "about": "Bilgisayar Mühendisi",
       "role": "roleApplicant",
       "id": 10
+    },
+    {
+      "firstName": "Ayşe",
+      "lastName": "Başar",
+      "email": "ayse@gmail.com",
+      "password": "12345",
+      "nationalIdentity": 15975346820,
+      "dateOfBirth": "18/09/1997",
+      "about": "Yazılımcı",
+      "role": "roleApplicant",
+      "state": 1,
+      "token": 462452156547856,
+      "expiration": "sdfsdfhjfghgdfad",
+      "id": 11
     }
   ],
   "instructor": [
@@ -285,15 +299,7 @@
       "instructorName": "Erdoğan ÖZTÜRK"
     }
   ],
-  "blacklist": [
-    {
-      "id": 1,
-      "applicantId": 5,
-      "applicantName": "Ahmet Karagöz",
-      "date": "30/11/2022",
-      "reason": "bencil adam"
-    }
-  ],
+  "blacklist": [],
   "application": [
     {
       "id": 1,
@@ -479,6 +485,20 @@
       "about": "Bilgisayar Mühendisi",
       "role": "roleApplicant",
       "id": 16
+    },
+    {
+      "firstName": "Ayşe",
+      "lastName": "Başar",
+      "email": "ayse@gmail.com",
+      "password": "12345",
+      "nationalIdentity": 15975346820,
+      "dateOfBirth": "18/09/1997",
+      "about": "Yazılımcı",
+      "role": "roleApplicant",
+      "state": 1,
+      "token": 462452156547856,
+      "expiration": "sdfsdfhjfghgdfad",
+      "id": 17
     }
   ]
 }

@@ -25,7 +25,7 @@ export class RegisterComponent implements OnInit {
   ngOnInit(): void {
     this.createCreateApplicantForm();
   }
-
+  
   createCreateApplicantForm() {
     this.createApplicantForm = this.formBuilder.group({
       firstName: ['', Validators.required],
@@ -36,6 +36,9 @@ export class RegisterComponent implements OnInit {
       dateOfBirth: ['', Validators.required],
       about: ['', Validators.required],
       role: ['roleApplicant', Validators.required],
+      state: [1],
+      token: [462452156547856],
+      expiration: ['sdfsdfhjfghgdfad'],
     });
   }
 
@@ -46,8 +49,7 @@ export class RegisterComponent implements OnInit {
         console.log(data);
       });
       this.userService.addApplicant(applicant).subscribe((data) => {
-        if(data)
-        console.log(data)
+        if (data) console.log(data);
         this.scroolToTop();
         this.toastrService.success('Kayıt Başarılı');
         setTimeout(() => {
