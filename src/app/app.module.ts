@@ -63,6 +63,8 @@ import { ApplicantdetailApplicantpageComponent } from './components/applicantpag
 import { ApplicantHeaderComponent } from './components/layouts/applicant-header/applicant-header.component';
 import { BootcamplistComponentInstructor } from './components/instructorpage/bootcamplist-instructorpage/bootcamplist.component';
 import { ApplicantdetailInstructorpageComponent } from './components/instructorpage/applicantdetail-instructorpage/applicantdetail-instructorpage.component';
+import { InstructorprofileComponent } from './components/instructorpage/instructorprofile/instructorprofile.component';
+import { EmployeeprofileComponent } from './components/employeeprofile/employeeprofile.component';
 
 
 
@@ -123,7 +125,9 @@ import { ApplicantdetailInstructorpageComponent } from './components/instructorp
     BootcamplistComponentInstructor,
     ApplicantlistComponentInstructor,
     ApplicantprofileComponent,
-    ApplicantdetailInstructorpageComponent
+    ApplicantdetailInstructorpageComponent,
+    InstructorprofileComponent,
+    EmployeeprofileComponent
   ],
   imports: [
     BrowserModule,

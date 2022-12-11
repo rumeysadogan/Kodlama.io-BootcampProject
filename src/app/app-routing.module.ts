@@ -1,3 +1,5 @@
+import { EmployeeprofileComponent } from './components/employeeprofile/employeeprofile.component';
+import { InstructorprofileComponent } from './components/instructorpage/instructorprofile/instructorprofile.component';
 import { AddblacklistComponent } from './components/instructorpage/addblacklist/addblacklist.component';
 import { ApplicantprofileComponent } from './components/applicantpage/applicantprofile/applicantprofile.component';
 
@@ -149,6 +151,9 @@ const routes: Routes = [
         path: 'admin-employee/update-employee/:id',
         component: UpdateEmployeeComponent,
       },
+      {
+        path:'admin-profile',component:EmployeeprofileComponent
+      }
     ],
   },
   {
@@ -248,6 +253,9 @@ const routes: Routes = [
       {
         path: 'instructor-instructors/instructor/:id',
         component: InstructordetailInstructorpageComponent,
+      },
+      {
+        path:'instructor-profile',component:InstructorprofileComponent
       },
 
       //Child of admin applicant
