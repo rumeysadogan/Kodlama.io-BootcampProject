@@ -6,11 +6,13 @@
 
 .user-img img{
     height: 38px;
+    border: 2px solid lightgray;
+    border-radius: 30px;
 }
 
 .user-img .name{
     height: 38px;
-    margin-top: 7px;
+    margin: 7px 5px 0 0;
 }    
 
 .user-img .name span{
