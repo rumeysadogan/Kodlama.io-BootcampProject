@@ -6,5 +6,6 @@ export interface IGetAllEmployeeResponseModel {
     password: string,
     nationalIdentity: number,
     dateOfBirth: string,
-    position: string
+    position: string,
+    img:string
 }

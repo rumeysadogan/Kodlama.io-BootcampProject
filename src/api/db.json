@@ -164,7 +164,8 @@
       "nationalIdentity": 12345678919,
       "dateOfBirth": "01/01/1990",
       "position": "memur",
-      "id": 1
+      "id": 1,
+      "img": "https://www.linkpicture.com/q/enesbinmalikkoksal.jpg"
     },
     {
       "firstName": "Enes",
