@@ -11,7 +11,7 @@ import { ThisReceiver } from '@angular/compiler';
 })
 export class ApplicantService {
 
-  apiurl: string = 'http://localhost:3000/applicant?state=1';
+  apiurl: string = 'http://localhost:3000/applicant';
 
   constructor(private httpClient:HttpClient) { }
 
@@ -21,7 +21,7 @@ export class ApplicantService {
   }
 
   getAllApplicant():Observable<IGetAllApplicantResponseModel[]>{
-    return this.httpClient.get<IGetAllApplicantResponseModel[]>(this.apiurl)
+    return this.httpClient.get<IGetAllApplicantResponseModel[]>(this.apiurl+'?state=1')
 
   }
 

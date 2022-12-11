@@ -8,4 +8,5 @@ export interface IGetApplicantResponseModel {
     dateOfBirth:string;
     about:string;
     state:number;
+    image:string;
 }
