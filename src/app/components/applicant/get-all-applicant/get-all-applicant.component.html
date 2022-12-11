@@ -45,7 +45,7 @@
                     <span class="text-secondary text-sm font-weight-normal">{{ applicant.dateOfBirth }}</span>
                   </td>
                   
-                  <td class="align-middle text-center text-sm" routerLink="/applicant/{{applicant.id}}">
+                  <td class="align-middle text-center text-sm" routerLink="/admin/admin-applicant/applicant/{{applicant.id}}">
                     <span class="badge badge-md border border-success text-success bg-success"
                       type="button">Detay</span>
                   </td>
@@ -68,29 +68,8 @@
                     </span>
                   </td>
                    <td class="align-middle">
-                    <span class="badge badge-md border border-success text-success bg-success" type="button">Kara
+                    <span class="badge badge-md border border-success text-success bg-success" type="button" routerLink="/admin/admin-blacklist/create-blacklist/{{applicant.id}}">Kara
                       Listeye Ekle
-                      <div class="modal fade" id="applicantBlackListModal" tabindex="-1" role="dialog"
-                        aria-labelledby="applicantBlackListModalLabel" aria-hidden="false">
-                        <div class="modal-dialog" role="document">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h5 class="modal-title" id="applicantBlackListModalLabel">Blacklist</h5>
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                              </button>
-                            </div>
-                            <div class="modal-body">
-                              Bu adayı kara listeye eklemek istediğinize emin misiniz?
-                            </div>
-                            <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                              <button type="button" class="btn btn-success" data-dismiss="modal"
-                                routerLink="/create-blacklist/{{applicant.id}}">Kara Listeye Ekle</button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
                     </span>
                   </td>
                 </tr>

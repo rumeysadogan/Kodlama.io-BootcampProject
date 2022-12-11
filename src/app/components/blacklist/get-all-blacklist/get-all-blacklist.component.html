@@ -12,6 +12,10 @@
       <td>{{ data.applicantName }}</td>
       <td>{{ data.date }}</td>
       <td>{{ data.reason }}</td>
+      <button type="button" class="btn btn-outline-danger btn-sm ml-2"
+        
+        (click)="removeApplicant(data.id, data.applicantId)">Remove From Black List</button>
     </tr>
+    
   </tbody>
 </table>
