@@ -19,7 +19,7 @@ export class InstructorService {
   }
   getInstructor(id): Observable<IGetInstructorResponseModel> {
     return this.httpClient.get<IGetInstructorResponseModel>(
-      this.apiurl + '/' + id
+      this.apiUrl + '/' + id
     );
   }
  
