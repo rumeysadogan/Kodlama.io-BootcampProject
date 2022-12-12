@@ -11,7 +11,7 @@ import { Observable } from 'rxjs';
 })
 export class InstructorService {
   apiUrl = 'http://localhost:3000/instructor';
-  apiurl='http://localhost:3000/users'
+  apiurl = 'http://localhost:3000/users';
   constructor(private httpClient: HttpClient) {}
 
   addInstructor(instructor: ICreateInstructorRequestModel) {
@@ -22,7 +22,11 @@ export class InstructorService {
       this.apiUrl + '/' + id
     );
   }
- 
+  getInstructorById(id): Observable<IGetInstructorResponseModel> {
+    return this.httpClient.get<IGetInstructorResponseModel>(
+      this.apiurl + '/' + id
+    );
+  }
   getAllInstructor(): Observable<IGetAllInstructorResponseModel[]> {
     return this.httpClient.get<IGetAllInstructorResponseModel[]>(this.apiUrl);
   }
@@ -34,6 +38,4 @@ export class InstructorService {
       this.apiUrl + '/' + data.id
     );
   }
-
-
 }

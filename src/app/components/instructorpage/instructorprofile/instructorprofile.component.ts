@@ -6,23 +6,22 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-instructorprofile',
   templateUrl: './instructorprofile.component.html',
-  styleUrls: ['./instructorprofile.component.css']
+  styleUrls: ['./instructorprofile.component.css'],
 })
 export class InstructorprofileComponent implements OnInit {
-
- 
-  instructor:IGetInstructorResponseModel;
-  constructor(private instructorService:InstructorService,
-    private activatedRoute:ActivatedRoute) { }
+  instructor: IGetInstructorResponseModel;
+  constructor(
+    private instructorService: InstructorService,
+    private activatedRoute: ActivatedRoute
+  ) {}
 
   ngOnInit(): void {
-    this.getInstructor(localStorage.getItem("id"))
+    this.getInstructor(localStorage.getItem('id'));
   }
 
-
-  getInstructor(id){
-    this.instructorService.getInstructor(id).subscribe((data)=>{
-      this.instructor=data;
+  getInstructor(id) {
+    this.instructorService.getInstructorById(id).subscribe((data) => {
+      this.instructor = data;
     });
   }
 }
